@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h2>extending base tyempalate </h2>
     {% for recipe in recipes %}
         {{ recipe.recipe_cooking_time }} <br>
         {{ recipe.recipe_ingredients }} <br>
