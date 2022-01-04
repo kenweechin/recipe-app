@@ -9,8 +9,15 @@
  }
 
 .brand-logo,
-.nav ul a,
 .sidenav li>a   {
     font-family: 'playfair display', sans-serif;
+}
+
+nav ul a {
+    font-family: 'Playfair Display';
+}
+
+nav .nav-wrapper {
+    padding-left: 10rem;
 }
 
