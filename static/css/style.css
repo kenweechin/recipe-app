@@ -1,7 +1,16 @@
- .text-shadow {
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display&display=swap');
+
+.text-shadow {
     text-shadow: 3px 3px 3px rgba(197, 39, 39, 0.8)
  }
 
- .sidenav-text {
+.sidenav-text {
      color: white;
  }
+
+.brand-logo,
+.nav ul a,
+.sidenav li>a   {
+    font-family: 'playfair display', sans-serif;
+}
+
