@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display&display=swap');
 
 .text-shadow {
-    text-shadow: 3px 3px 3px rgba(197, 39, 39, 0.8)
- }
+    text-shadow: 2px 2px 2px rgba(80, 13, 13, 0.4)
+}
+
+nav .brand-logo {
+    color: #9b4102;
+}
 
 .sidenav-text {
      color: white;
- }
+}
 
 .brand-logo,
 .sidenav li>a   {
@@ -15,9 +19,11 @@
 
 nav ul a {
     font-family: 'Playfair Display';
+    color: #9b4102;
 }
 
 nav .nav-wrapper {
     padding-left: 10rem;
 }
+
 
