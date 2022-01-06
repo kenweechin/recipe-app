@@ -13,7 +13,8 @@ nav .brand-logo {
 }
 
 .brand-logo,
-.sidenav li>a   {
+.sidenav li>a,
+.register-header  {
     font-family: 'playfair display', sans-serif;
 }
 
