@@ -23,11 +23,20 @@ nav ul a {
     color: #9b4102;
 }
 
-nav .nav-wrapper {
-    padding-left: 10rem;
-}
-
 .flash-message h3 {
     line-height: 2;
+}
+
+.slider .indicators .indicator-item {
+    display: none;
+}
+
+.container {
+    width: 100%;
+}
+
+h3,
+h5 {
+    font-family: 'playfair display', sans-serif;
 }
 
