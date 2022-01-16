@@ -40,3 +40,9 @@ h5 {
     font-family: 'playfair display', sans-serif;
 }
 
+@media screen and (min-width: 993px) {
+    a.brand-logo {
+        left: 45%;
+    }
+}
+
