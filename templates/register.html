@@ -1,34 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2 class="register-header center-align">Register</h2>
+<section>
+    <img class="responsive-img" src="{{url_for('static', filename='images/register-image.jpg')}}">
+        <h2 class="register-header ">Register</h2>
 
-<div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}" >
-        <div class="card-panel teal">
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user-plus prefix"></i>
-                    <input id="username" name="username" type="text" minlength ="4" 
-                        maxlength="20" pattern="^[a-zA-Z0-9]{4,20}$" class="validate" required>
-                    <label for="username">First Name</label>
+        <div class="row">
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+                <div class="card-panel teal">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-user-plus prefix"></i>
+                            <input id="username" name="username" type="text" minlength="4" maxlength="20"
+                                pattern="^[a-zA-Z0-9]{4,20}$" class="validate" required>
+                            <label for="username">First Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-user-lock prefix"></i>
+                            <input id="password" name="password" type="password" minlength="6" maxlength="20"
+                                pattern="^[a-zA-Z0-9]{6,20}$" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="col s12 btn-large text-shadow">
+                            Register <i class="fas fa-sign-in-alt"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user-lock prefix"></i>
-                    <input id="password" name="password" type="password" minlength ="6" 
-                    maxlength="20" pattern="^[a-zA-Z0-9]{6,20}$" class="validate">
-                    <label for="password">Password</label>
-                </div>
-            </div>
-            <div class="row">
-                <button type="submit" class="col s12 btn-large text-shadow">
-                    Register <i class="fas fa-sign-in-alt"></i>
-                </button>
-            </div>
+            </form>
         </div>
-    </form>
-</div>
+</section>
+
+
 
 {% endblock %}

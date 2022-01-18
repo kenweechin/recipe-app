@@ -40,6 +40,15 @@ h5 {
     font-family: 'playfair display', sans-serif;
 }
 
+.responsive-img {
+    position: relative;
+}
+
+.register-header {
+    position: absolute;
+    right: 15rem;
+}
+
 @media screen and (min-width: 993px) {
     a.brand-logo {
         left: 45%;
