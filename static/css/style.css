@@ -40,13 +40,26 @@ h5 {
     font-family: 'playfair display', sans-serif;
 }
 
-.responsive-img {
-    position: relative;
+.register-background-image {
+    background: url("../images/register-image.jpg")no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
 }
 
 .register-header {
-    position: absolute;
-    right: 15rem;
+    margin: 0;
+    text-align: center;
+}
+
+.fa-user-plus,
+.fa-user-lock {
+    color: white;
+}
+
+.input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
 }
 
 @media screen and (min-width: 993px) {

@@ -1,13 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section>
-    <img class="responsive-img" src="{{url_for('static', filename='images/register-image.jpg')}}">
-        <h2 class="register-header ">Register</h2>
-
-        <div class="row">
+<body>
+<section class="register-background-image">
+    <div class="row">
+        <h2 class="register-header">Register</h2>
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
-                <div class="card-panel teal">
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="fas fa-user-plus prefix"></i>
@@ -29,10 +27,10 @@
                             Register <i class="fas fa-sign-in-alt"></i>
                         </button>
                     </div>
-                </div>
             </form>
-        </div>
+    </div>
 </section>
+</body>
 
 
 
