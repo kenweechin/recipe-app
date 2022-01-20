@@ -46,6 +46,12 @@ h5 {
     background-size: cover;
 }
 
+#register-element{
+    transform: scale(1.0) translateY(5rem);
+    background: rgba(145, 71, 71, 0.4);
+    z-index: 1;
+}
+
 .register-header {
     margin: 0;
     text-align: center;
