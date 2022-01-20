@@ -1,34 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2 class="login-header center-align">Log In</h2>
-
-<div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}" >
-        <div class="card-panel teal">
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user-plus prefix"></i>
-                    <input id="username" name="username" type="text" minlength ="4" 
-                        maxlength="20" pattern="^[a-zA-Z0-9]{4,20}$" class="validate" required>
-                    <label for="username">First Name</label>
+<body>
+    <section class="login-background-image">
+        <div class="row" id="login-element">
+            <h3 class="login-header center-align">Log In</h3>
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-user-plus prefix"></i>
+                        <input id="username" name="username" type="text" minlength="4" maxlength="20"
+                            pattern="^[a-zA-Z0-9]{4,20}$" class="validate" required>
+                        <label for="username">First Name</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user-lock prefix"></i>
-                    <input id="password" name="password" type="password" minlength ="6" 
-                    maxlength="20" pattern="^[a-zA-Z0-9]{6,20}$" class="validate">
-                    <label for="password">Password</label>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-user-lock prefix"></i>
+                        <input id="password" name="password" type="password" minlength="6" maxlength="20"
+                            pattern="^[a-zA-Z0-9]{6,20}$" class="validate">
+                        <label for="password">Password</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <button type="submit" class="col s12 btn-large text-shadow">
-                    Log In <i class="fas fa-sign-in-alt"></i>
-                </button>
-            </div>
+                <div class="row">
+                    <button type="submit" class="col s12 btn-large text-shadow">
+                        Log In <i class="fas fa-sign-in-alt"></i>
+                    </button>
+                </div>
+            </form>
         </div>
-    </form>
-</div>
+    </section>
+</body>
 
 {% endblock %}
