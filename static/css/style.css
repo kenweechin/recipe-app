@@ -46,13 +46,39 @@ h5 {
     background-size: cover;
 }
 
+.login-header {
+    margin-top: 0;
+}
+
+#username-login,
+#password-login {
+    color:white;
+}
+
+.user-login,
+.password-login {
+    color:white;
+}
+
+.login-header {
+    text-align: center;
+    border: none;
+    color: #fff;
+    padding: 0.7em 1.7em;
+    border-radius: 0.5em;
+    background: #ab89892e;
+    border: 0.1rem solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 0.3rem 0.3rem 0.3rem #c5c5c5, 0.3rem 0.3rem 0.3rem #ffffff;
+}
+
 .register-background-image {
     background: url("../images/register-image.jpg")no-repeat center;
     min-height: 100vh;
     background-size: cover;
 }
 
-#register-element{
+#register-element {
     transform: scale(1.0) translateY(5rem);
     background: rgba(145, 71, 71, 0.4);
     z-index: 1;
@@ -83,13 +109,14 @@ h5 {
     font-style: italic;
 }
 
-/* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
+
 .container-register-button {
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
+/* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
 button {
     position: relative;
     padding: 19px 36px;
