@@ -44,6 +44,7 @@ h5 {
     background: url("../images/login-image.jpg")no-repeat center;
     min-height: 100vh;
     background-size: cover;
+    opacity: 0.9;
 }
 
 .login-header {
@@ -73,7 +74,7 @@ h5 {
 }
 
 /* Button design is derived and edited from https://cssbuttons.io/detail/adamgiebl/ugly-robin-41  */
-.login-button {
+/* .login-button {
         --green: #1BFD9C;
         font-size: 15px;
         padding: 0.7em 2.7em;
@@ -109,7 +110,7 @@ button:before {
        
 button:hover:before {
         transform: translateX(15em);
-}
+} */
 
 .register-background-image {
     background: url("../images/register-image.jpg")no-repeat center;
@@ -156,7 +157,8 @@ button:hover:before {
 }
 
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
-button {
+.register-button, 
+.login-button {
     position: relative;
     padding: 19px 36px;
     display: block;
