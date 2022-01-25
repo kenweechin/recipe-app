@@ -191,6 +191,12 @@ button:hover .liquid {
     }
    }
 
+@media screen and (min-width: 320px) {
+   h3.register-header {
+       font-size: 2rem;
+   }
+}
+
 @media screen and (min-width: 993px) {
     a.brand-logo {
         left: 42%;
