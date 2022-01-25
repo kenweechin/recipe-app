@@ -23,6 +23,13 @@ nav ul a {
     color: #9b4102;
 }
 
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 64px;
+    line-height: 64px;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+}
+
 .flash-message h3 {
     line-height: 2;
 }
