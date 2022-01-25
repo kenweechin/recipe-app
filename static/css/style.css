@@ -75,6 +75,8 @@ h5 {
 
 .sign-in-divert-link {
     font-family: 'playfair display', sans-serif;
+    font-weight: bold;
+    padding-top: 1.5rem;
 }
 
 .register-background-image {
