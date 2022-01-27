@@ -213,6 +213,13 @@ button:hover .liquid {
    h3.register-header {
        font-size: 2rem;
    }
+   button span {
+    position: relative;
+    color: #fff;
+    font-family: Arial;
+    letter-spacing: 3px;
+    z-index: 1;
+}
 }
 
 @media screen and (min-width: 993px) {
