@@ -38,6 +38,15 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     display: none;
 }
 
+.slider .slides li img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background: rgba(0,0,0,.5);
+}
+
 .container {
     width: 100%;
 }
