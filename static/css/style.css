@@ -9,12 +9,12 @@ nav .brand-logo {
 }
 
 .sidenav-text {
-     color: #f30d66;
+    color: #f30d66;
 }
 
 .brand-logo,
 .sidenav li>a,
-.register-header  {
+.register-header {
     font-family: 'playfair display', sans-serif;
 }
 
@@ -23,7 +23,10 @@ nav ul a {
     color: #9b4102;
 }
 
-nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+nav,
+nav .nav-wrapper i,
+nav a.sidenav-trigger,
+nav a.sidenav-trigger i {
     height: 64px;
     line-height: 64px;
     padding-left: 2rem;
@@ -44,7 +47,7 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
 }
 
 .container {
@@ -54,6 +57,24 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
 h3,
 h5 {
     font-family: 'playfair display', sans-serif;
+}
+
+#recipe-variation {
+    font-family: 'playfair display', sans-serif;
+    text-align: center;
+    margin-top: 0;
+}
+
+#breakfast,
+#lunch,
+#dinner {
+    padding: 5rem;
+}
+
+.card .card-image .card-title {
+    color: black;
+    font-family: 'playfair display', sans-serif;
+    position: relative;
 }
 
 .login-background-image {
@@ -69,12 +90,12 @@ h5 {
 
 #username-login,
 #password-login {
-    color:black;
+    color: black;
 }
 
 .user-login,
 .password-login {
-    color:white;
+    color: white;
 }
 
 .login-header {
@@ -126,7 +147,8 @@ h5 {
     color: white;
 }
 
-.input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
+.input-field.col .prefix~label,
+.input-field.col .prefix~.validate~label {
     color: black;
     font-weight: bold;
     font-style: italic;
@@ -140,7 +162,7 @@ h5 {
 }
 
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
-.register-button, 
+.register-button,
 .login-button {
     position: relative;
     padding: 19px 36px;
@@ -150,16 +172,16 @@ h5 {
     overflow: hidden;
     border-radius: 40px;
     border: none;
-   }
-   
+}
+
 button span {
     position: relative;
     color: #fff;
     font-family: Arial;
     letter-spacing: 8px;
     z-index: 1;
-   }
-   
+}
+
 button .liquid {
     position: absolute;
     top: -80px;
@@ -169,8 +191,8 @@ button .liquid {
     background: #3d155f;
     box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
     transition: .5s;
-   }
-   
+}
+
 button .liquid::after,
 button .liquid::before {
     content: '';
@@ -181,45 +203,50 @@ button .liquid::before {
     left: 50%;
     transform: translate(-50%, -75%);
     background: #fff;
-   }
-   
+}
+
 button .liquid::before {
     border-radius: 45%;
     background: #df678c;
     animation: animate 5s linear infinite;
-   }
-   
+}
+
 button .liquid::after {
     border-radius: 40%;
     background: #df678c;
     animation: animate 10s linear infinite;
-   }
-   
+}
+
 button:hover .liquid {
     top: -120px;
-   }
-   
+}
+
 @keyframes animate {
     0% {
-     transform: translate(-50%, -75%) rotate(0deg);
+        transform: translate(-50%, -75%) rotate(0deg);
     }
-   
+
     100% {
-     transform: translate(-50%, -75%) rotate(360deg);
+        transform: translate(-50%, -75%) rotate(360deg);
     }
-   }
+}
 
 @media screen and (min-width: 320px) {
-   h3.register-header {
-       font-size: 2rem;
-   }
-   button span {
-    position: relative;
-    color: #fff;
-    font-family: Arial;
-    letter-spacing: 3px;
-    z-index: 1;
-}
+    h3.register-header {
+        font-size: 2rem;
+    }
+
+    #recipe-variation {
+        font-size: 2rem;
+    }
+
+    button span {
+        position: relative;
+        color: #fff;
+        font-family: Arial;
+        letter-spacing: 3px;
+        z-index: 1;
+    }
 }
 
 @media screen and (min-width: 993px) {
@@ -227,4 +254,3 @@ button:hover .liquid {
         left: 42%;
     }
 }
-
