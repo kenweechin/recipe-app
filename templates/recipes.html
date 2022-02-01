@@ -22,44 +22,44 @@
 
 <div class="row recipe-choice">
   <div class="col s12 m4" id="breakfast">
-    <div class="card">
-      <div class="card-image">
-        <img src="{{url_for('static', filename='images/breakfast.jpg')}}">
-        <span class="card-title">Breakfast</span>
-      </div>
-      <div class="card-content">
-      </div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m4" id="lunch">
-    <div class="card">
-      <div class="card-image">
-        <img src="{{url_for('static', filename='images/lunch.jpg')}}">
-        <span class="card-title">Lunch</span>
-      </div>
-      <div class="card-content">
-      </div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m4" id="dinner">
+    <div class="z-depth-5">
       <div class="card">
         <div class="card-image">
-          <img src="{{url_for('static', filename='images/dinner.jpg')}}">
-          <span class="card-title">Dinner</span>
-        </div>
-        <div class="card-content">
+          <img src="{{url_for('static', filename='images/breakfast.jpg')}}">
+          <span class="card-title">Breakfast</span>
         </div>
         <div class="card-action">
           <a href="#">This is a link</a>
         </div>
       </div>
-  </div>    
+    </div>
+  </div>
+  <div class="col s12 m4" id="lunch">
+    <div class="z-depth-5">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{url_for('static', filename='images/lunch.jpg')}}">
+          <span class="card-title">Lunch</span>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m4" id="dinner">
+    <div class=" z-depth-5">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{url_for('static', filename='images/dinner.jpg')}}">
+          <span class="card-title">Dinner</span>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- {% for recipe in recipes %}
         {{ recipe.recipe_cooking_time }} <br>
