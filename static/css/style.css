@@ -71,6 +71,16 @@ h5 {
     position: relative;
 }
 
+#recipe-breakfast,
+#recipe-lunch,
+#recipe-dinner {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'playfair display', sans-serif;
+}
+
 .login-background-image {
     background: url("../images/login-image.jpg")no-repeat center;
     min-height: 100vh;
