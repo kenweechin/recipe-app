@@ -235,6 +235,38 @@ button:hover .liquid {
     }
 }
 
+.social-network-list {
+    text-align: center;
+    padding: 0;
+}
+
+.social-networks {
+    display: inline-block;
+}
+
+.social-networks i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #4E8098;
+}
+
+.footer-copyright {
+    font-family: 'playfair display', sans-serif;
+    font-size: 0.9rem;
+    margin-top: 0.9rem;
+    text-align: justify;
+    text-align: center;
+}
+
+.social-media-title {
+    font-family: 'playfair display', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1.1rem;
+    text-align: center;
+}
+
+
 @media screen and (min-width: 320px) {
     h3.register-header {
         font-size: 2rem;
