@@ -27,19 +27,18 @@
                 <div class="input-field col s12 m4">
                     <select class="validate" id="category_name" name="category_name" required>
                         <option value="" disabled selected>Choose your meal type</option>
-                        <option value="">Breakfast</option>
-                        <option value="">Lunch</option>
-                        <option value="">Dinner</option>
+                        {% for category in categories %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endfor %}
                     </select>
                     <label for="category_name">Meal Type</label>
                 </div>
                 <div class="input-field col s12 m4">
                     <select class="validate" id="diet_type" name="diet_type" required>
                         <option value="" disabled selected>Choose your diet type</option>
-                        <option value="" class="left">Normal</option>
-                        <option value="" class="left">Low Carb</option>
-                        <option value="" class="left">Vegan</option>
-                        <option value="" class="left">Dairy / Lactose Free</option>
+                        {% for diet in dietery %}
+                            <option value="{{ diet.diet_type }}">{{ diet.diet_type }}</option>
+                        {% endfor %}
                     </select>
                     <label for="diet_type">Dietery</label>
                 </div>
