@@ -127,7 +127,6 @@ h5 {
 }
 
 #register-element {
-    /* transform: scale(1.0) translateY(5rem); */
     background: rgba(145, 71, 71, 0.4);
     z-index: 1;
     padding-bottom: 2rem;
@@ -166,6 +165,7 @@ h5 {
 }
 
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
+/******************* button designation for Log In and Sign Up page ********************/
 .register-button,
 .login-button {
     position: relative;
@@ -235,6 +235,8 @@ button:hover .liquid {
     }
 }
 
+
+/******************* footer section for all pages ********************/
 .social-network-list {
     text-align: center;
     padding: 0;
@@ -266,7 +268,7 @@ button:hover .liquid {
     text-align: center;
 }
 
-
+/******************* screen responsiveness adjustment ********************/
 @media screen and (min-width: 320px) {
     h3.register-header {
         font-size: 2rem;
