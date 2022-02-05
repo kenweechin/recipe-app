@@ -5,48 +5,48 @@
 <div class="container-addrecipe">
     <h3 class="black-text center-align my-recipe-title">My Recipe</h3>
 
-    <div class="row">
+    <div class="row card-panel">
         <form class="col s12" method="POST" action="">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-book prefix"></i>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Create Your Recipe Name</label>
+                    <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="20" class="materialize-textarea" required></textarea>
+                    <label for="recipe_name">Create Your Recipe Name</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
                     <i class="far fa-edit prefix"></i>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Describe Your Recipe</label>
+                    <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="20" class="materialize-textarea" required></textarea>
+                    <label for="recipe_description">Describe Your Recipe</label>
                 </div>
             </div>
  
             <div class="row">
                 <div class="input-field col s12 m4">
-                    <select class="icons">
+                    <select class="icons" id="recipe_meal_type" name="recipe_meal_type" required>
                         <option value="" disabled selected>Choose your option</option>
                         <option value="">Breakfast</option>
                         <option value="">Lunch</option>
                         <option value="">Dinner</option>
                     </select>
-                    <label>Meal Type</label>
+                    <label for="recipe_meal_type">Meal Type</label>
                 </div>
                 <div class="input-field col s12 m4">
-                    <select class="icons">
+                    <select class="icons" id="recipe_diet_type" name="recipe_diet_type" required>
                         <option value="" disabled selected>Choose your option</option>
                         <option value="" class="left">Normal</option>
                         <option value="" class="left">Low Carb</option>
                         <option value="" class="left">Vegan</option>
                         <option value="" class="left">Dairy / Lactose Free</option>
                     </select>
-                    <label>Dietery</label>
+                    <label for="recipe_diet_type">Dietery</label>
                 </div>
                 <div class="input-field col s12 m4">
                     <i class="fas fa-utensils prefix"></i>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Serving Size</label>
+                    <textarea id="recipe_serving" name="recipe_serving" class="materialize-textarea" required></textarea>
+                    <label for="recipe_serving">Serving Size</label>
                 </div>
             </div>
 
@@ -55,13 +55,13 @@
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="fas fa-stopwatch prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">Preparation Time</label>
+                            <input id="recipe_preparation_time" name="recipe_preparation_time" type="text" class="validate" required>
+                            <label for="recipe_preparation_time">Preparation Time</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="fas fa-stopwatch prefix"></i>
-                            <input id="icon_telephone" type="tel" class="validate">
-                            <label for="icon_telephone">Cooking Time</label>
+                            <input id="recipe_cooking_time" name="recipe_cooking_time" type="text" class="validate" required>
+                            <label for="recipe_cooking_time">Cooking Time</label>
                         </div>
                     </div>
             </div>
@@ -69,24 +69,24 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-list-ol prefix"></i>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Ingredients(New Line For Each)</label>
+                    <textarea id="recipe_ingredients" name="recipe_ingredients" class="materialize-textarea" required></textarea>
+                    <label for="recipe_ingredients">Ingredients(New Line For Each)</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-list-alt prefix"></i>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Methods(New Line For Each)</label>
+                    <textarea id="recipe_method" name="recipe_method" class="materialize-textarea" required></textarea>
+                    <label for="recipe_method">Methods(New Line For Each)</label>
                 </div>
             </div>
             
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-list-alt prefix"></i>
-                    <input id="url" type="url" class="validate">
-                    <label for="textarea1">Upload Your Image</label>
+                    <input id="image" type="url" class="validate" required>
+                    <label for="image">Upload Your Image</label>
                 </div>
             </div> 
         </form>
