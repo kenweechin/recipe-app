@@ -239,6 +239,10 @@ button:hover .liquid {
     padding: 4rem;
 }
 
+.btn, .btn-large, .btn-small {
+    background-color: #760e0e;
+}
+
 /******************* footer section for all pages ********************/
 .social-network-list {
     text-align: center;
