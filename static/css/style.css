@@ -239,6 +239,11 @@ button:hover .liquid {
     padding: 4rem;
 }
 
+.fa-asterisk:before {
+    padding: 0.5rem;
+    color:red;
+}
+
 .btn, .btn-large, .btn-small {
     background-color: #d10303;
     border-radius: 2rem;

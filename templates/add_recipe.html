@@ -12,7 +12,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-book prefix"></i>
                     <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="20" class="materialize-textarea validate" required></textarea>
-                    <label for="recipe_name">Create Your Recipe Name</label>
+                    <label for="recipe_name">Create Your Recipe Name<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
             </div>
 
@@ -21,7 +21,7 @@
                 <div class="input-field col s12">
                     <i class="far fa-edit prefix"></i>
                     <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="20" class="materialize-textarea validate" required></textarea>
-                    <label for="recipe_description">Describe Your Recipe</label>
+                    <label for="recipe_description">Describe Your Recipe<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
             </div>
  
@@ -34,7 +34,7 @@
                             <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                         {% endfor %}
                     </select>
-                    <label for="category_name">Meal Type</label>
+                    <label for="category_name">Meal Type<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
                 <!-- recipe dietery selection-->
                 <div class="input-field col s12 m4">
@@ -44,13 +44,14 @@
                             <option value="{{ diet.diet_type }}">{{ diet.diet_type }}</option>
                         {% endfor %}
                     </select>
-                    <label for="diet_type">Dietery</label>
+                    <label for="diet_type">Dietery<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
                 <!-- recipe serving-->
                 <div class="input-field col s12 m4">
                     <i class="fas fa-utensils prefix"></i>
                     <textarea id="recipe_serving" name="recipe_serving" class="materialize-textarea validate" required></textarea>
-                    <label for="recipe_serving">Serving Size</label>
+                    <label for="recipe_serving">Serving Size <i class="fas fa-asterisk fa-xs"></i></label>
+                    
                 </div>
             </div>
             <!-- recipe preparation time and cooking time-->
@@ -60,12 +61,12 @@
                         <div class="input-field col s6">
                             <i class="fas fa-stopwatch prefix"></i>
                             <input id="recipe_preparation_time" name="recipe_preparation_time" type="text" class="validate" required>
-                            <label for="recipe_preparation_time">Preparation Time</label>
+                            <label for="recipe_preparation_time">Preparation Time(min)<i class="fas fa-asterisk fa-xs"></i></label>
                         </div>
                         <div class="input-field col s6">
                             <i class="fas fa-stopwatch prefix"></i>
                             <input id="recipe_cooking_time" name="recipe_cooking_time" type="text" class="validate" required>
-                            <label for="recipe_cooking_time">Cooking Time</label>
+                            <label for="recipe_cooking_time">Cooking Time(min)<i class="fas fa-asterisk fa-xs"></i></label>
                         </div>
                     </div>
             </div>
@@ -74,7 +75,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-list-ol prefix"></i>
                     <textarea id="recipe_ingredients" name="recipe_ingredients" class="materialize-textarea" required></textarea>
-                    <label for="recipe_ingredients">Ingredients(New Line For Each)</label>
+                    <label for="recipe_ingredients">Ingredients(New Line For Each)<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
             </div>
             <!-- recipe method-->
@@ -82,7 +83,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-list-alt prefix"></i>
                     <textarea id="recipe_method" name="recipe_method" class="materialize-textarea" required></textarea>
-                    <label for="recipe_method">Methods(New Line For Each)</label>
+                    <label for="recipe_method">Methods(New Line For Each)<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
             </div>
             <!-- image URL-->
