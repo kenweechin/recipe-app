@@ -240,7 +240,14 @@ button:hover .liquid {
 }
 
 .btn, .btn-large, .btn-small {
-    background-color: #760e0e;
+    background-color: #d10303;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i {
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /******************* footer section for all pages ********************/
