@@ -20,7 +20,10 @@
         </a> 
     </div>
 </div>
- 
 
+<p>Your recipes as below:<p>
+{% for recipe in recipes %}
+    {{ recipe.recipe_cooking_time }}
+{% endfor %}
 
 {% endblock %}

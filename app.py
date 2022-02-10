@@ -74,9 +74,11 @@ def profile(username):
     username = mongo.db.users.find_one({"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        recipes = list(mongo.db.recipes.find({"created_by": username})) 
+        return render_template("profile.html", username=username, recipes=recipes)
     
     return redirect(url_for("login"))
+
 
 
 @app.route("/logout")
@@ -100,10 +102,11 @@ def add_recipe():
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_method": request.form.get("recipe_method"),
             "image": request.form.get("image"),
+            "created_by": session["user"]
         }
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe Successfully Added")
-        return redirect(url_for("get_recipes"))
+        return redirect(url_for("profile", username=session["user"]))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     dietery = mongo.db.dietery.find().sort("diet_type", 1)
