@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
- 
-
 <div class="row">
     <div class="col s12 m8 offset-m2">
         <div>
@@ -14,16 +12,33 @@
 </div>
 
 <div class="row">
-    <div class="col s12 center-align" >
-        <a href = "{{ url_for('add_recipe') }}"
-            class="btn"><i class="material-icons center">Click Me TO Add New Recipe</i> 
-        </a> 
+    <div class="col s12 center-align">
+        <a href="{{ url_for('add_recipe') }}" class="btn"><i class="material-icons center">Click Me To Add New
+                Recipe</i>
+        </a>
     </div>
 </div>
 
-<p>Your recipes as below:<p>
-{% for recipe in recipes %}
-    {{ recipe.recipe_cooking_time }}
-{% endfor %}
+ 
+<div class="row">
+    {% for recipe in recipes %}
+    <div class="col s12 m3">
+
+      <div class="card recipe-card">
+
+        <div class="card-image">
+          <img src="{{ recipe.image_url }}">
+        </div>
+
+        <div class="card-content">
+          <h4>{{ recipe.category_name }}</h4>
+          <h4>{{ recipe.recipe_name }}</h4>
+          <h4>{{ recipe.recipe_method }}</h4>
+          <h4>{{ recipe.recipe_serving }}</h4>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 
 {% endblock %}

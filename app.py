@@ -94,14 +94,14 @@ def add_recipe():
         recipe = {
             "recipe_name": request.form.get("recipe_name"),
             "recipe_description": request.form.get("recipe_description"),
-            "category_name": request.form.getlist("category_name"),
-            "diet_type": request.form.getlist("diet_type"),
+            "category_name": request.form.get("category_name"),
+            "diet_type": request.form.get("diet_type"),
             "recipe_serving": request.form.get("recipe_serving"),
             "recipe_preparation_time": request.form.get("recipe_preparation_time"),
             "recipe_cooking_time": request.form.get("recipe_cooking_time"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_method": request.form.get("recipe_method"),
-            "image": request.form.get("image"),
+            "image_url": request.form.get("image_url"),
             "created_by": session["user"]
         }
         mongo.db.recipes.insert_one(recipe)
