@@ -24,7 +24,7 @@
     {% for recipe in recipes %}
     <div class="col s12 m3">
 
-      <div class="card recipe-card">
+      <div class="card medium recipe-card">
 
         <div class="card-image">
           <img src="{{ recipe.image_url }}">
@@ -33,7 +33,7 @@
         <div class="card-content">
           <h4>{{ recipe.category_name }}</h4>
           <h4>{{ recipe.recipe_name }}</h4>
-          <h4>{{ recipe.recipe_method }}</h4>
+          <h4>{{ recipe.diet_type }}</h4>
           <h4>{{ recipe.recipe_serving }}</h4>
         </div>
       </div>
