@@ -175,6 +175,7 @@ h5 {
 .card-category-name {
     font-weight: bold;
     text-align : center;
+    padding: 0.8rem;
 }
 
 .recipe-name,
@@ -183,6 +184,12 @@ h5 {
     font-family: 'playfair display', sans-serif;
     text-align: center;
     margin: 0.5rem;
+}
+
+.fa-male:before,
+.fa-concierge-bell:before {
+    padding: 0.5rem;
+    color: orange;
 }
 
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
