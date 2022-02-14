@@ -164,6 +164,14 @@ h5 {
     display: flex;
 }
 
+
+/******************* user's profile page********************/
+.card .card-image img {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+}
+
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
 /******************* button designation for Log In and Sign Up page ********************/
 .register-button,
@@ -304,6 +312,10 @@ button:hover .liquid {
         letter-spacing: 3px;
         z-index: 1;
     }
+}
+
+.card .card-content {
+    padding: 0rem;
 }
 
 @media screen and (min-width: 993px) {

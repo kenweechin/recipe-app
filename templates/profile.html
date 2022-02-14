@@ -24,17 +24,17 @@
     {% for recipe in recipes %}
     <div class="col s12 m3">
 
-      <div class="card medium recipe-card">
+      <div class="card medium">
 
         <div class="card-image">
           <img src="{{ recipe.image_url }}">
         </div>
 
         <div class="card-content">
-          <h4>{{ recipe.category_name }}</h4>
-          <h4>{{ recipe.recipe_name }}</h4>
-          <h4>{{ recipe.diet_type }}</h4>
-          <h4>{{ recipe.recipe_serving }}</h4>
+          <h5>{{ recipe.category_name }}</h5>
+          <h5>{{ recipe.recipe_name }}</h5>  
+          <h5>{{ recipe.diet_type }}</h5>
+          <h5>{{ recipe.recipe_serving }}</h5>
         </div>
       </div>
     </div>
