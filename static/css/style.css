@@ -172,6 +172,19 @@ h5 {
     object-fit: cover;
 }
 
+.card-category-name {
+    font-weight: bold;
+    text-align : center;
+}
+
+.recipe-name,
+.diet-type,
+.recipe-serving {
+    font-family: 'playfair display', sans-serif;
+    text-align: center;
+    margin: 0.5rem;
+}
+
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
 /******************* button designation for Log In and Sign Up page ********************/
 .register-button,

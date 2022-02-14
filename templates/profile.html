@@ -31,10 +31,11 @@
         </div>
 
         <div class="card-content">
-          <h5>{{ recipe.category_name }}</h5>
-          <h5>{{ recipe.recipe_name }}</h5>  
-          <h5>{{ recipe.diet_type }}</h5>
-          <h5>{{ recipe.recipe_serving }}</h5>
+          <h5 class="card-category-name">{{ recipe.category_name }}</h5>
+          <div class="col s12 uppercase recipe-name">{{ recipe.recipe_name }}</div>
+          <div class="col s12 uppercase diet-type">{{ recipe.diet_type }}</div>
+          <div class="col s12 uppercase recipe-serving">{{ recipe.recipe_serving }}</div>
+
         </div>
       </div>
     </div>
