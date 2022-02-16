@@ -174,6 +174,9 @@ h5 {
 .highlight-text  {
     font-weight: bold;
     font-style: italic;
+    padding: 0.5rem;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 .card .card-image img {
