@@ -166,6 +166,16 @@ h5 {
 
 
 /******************* user's profile page********************/
+.number-recipe-count{
+    text-align: center;
+    font-family: 'playfair display', sans-serif;
+}
+
+.highlight-text  {
+    font-weight: bold;
+    font-style: italic;
+}
+
 .card .card-image img {
     width: 100%;
     height: 45vh;

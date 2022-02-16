@@ -73,12 +73,14 @@ def login():
 def profile(username):
     username = mongo.db.users.find_one({"username": session["user"]})["username"]
 
-    if session["user"]:
-        recipes = list(mongo.db.recipes.find({"created_by": username})) 
-        return render_template("profile.html", username=username, recipes=recipes)
-    
-    return redirect(url_for("login"))
 
+
+    if session["user"]:
+        recipes = list(mongo.db.recipes.find({"created_by": username}))
+        my_recipes = mongo.db.recipes.find({"created_by": username})
+        num_of_rec = my_recipes.count()
+        return render_template("profile.html", username=username, recipes=recipes, my_recipes=my_recipes, num_of_rec=num_of_rec)
+    return redirect(url_for("login"))
 
 
 @app.route("/logout")
