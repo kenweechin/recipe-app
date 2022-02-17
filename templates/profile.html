@@ -21,15 +21,14 @@
     </div>
 </div>
 
- 
 <div class="row">
     {% for recipe in recipes %}
     <div class="col s12 m3">
-
       <div class="card medium">
-
         <div class="card-image">
-          <img src="{{ recipe.image_url }}">
+          <a href="{{ url_for('recipe_details', recipe_id=recipe._id ) }}">
+            <img src="{{ recipe.image_url }}">
+          </a>
         </div>
 
         <div class="card-content">

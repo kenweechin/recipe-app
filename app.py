@@ -72,9 +72,6 @@ def login():
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     username = mongo.db.users.find_one({"username": session["user"]})["username"]
-
-
-
     if session["user"]:
         recipes = list(mongo.db.recipes.find({"created_by": username}))
         my_recipes = mongo.db.recipes.find({"created_by": username})
@@ -113,6 +110,12 @@ def add_recipe():
     categories = mongo.db.categories.find().sort("category_name", 1)
     dietery = mongo.db.dietery.find().sort("diet_type", 1)
     return render_template("add_recipe.html", categories = categories, dietery = dietery )
+
+
+@app.route('/recipe_details/<recipe_id>')
+def recipe_details(recipe_id):
+    selected_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template ("recipe_details.html", selected_recipe=selected_recipe)
 
 
 if __name__ == "__main__":
