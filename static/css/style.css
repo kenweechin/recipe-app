@@ -204,6 +204,20 @@ h5 {
     color: orange;
 }
 
+/******************* user's single recipe profile page********************/
+.selected-recipe-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 4rem; 
+    margin-bottom: 2rem; 
+}
+
+.single-recipe-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
 /******************* button designation for Log In and Sign Up page ********************/
 .register-button,

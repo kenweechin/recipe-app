@@ -3,13 +3,11 @@
 
 <div class="row">
 
+<h3 class="selected-recipe-title">{{ selected_recipe.recipe_name }}</h3>
+
   <div class="col s12 m3">
-    <div class="card medium">
-      <div class="card-image">
-          <img src="{{ selected_recipe.image_url }}">
-      </div>
-      <h2>{{ selected_recipe.recipe_name }}</h2>
-    </div>
+    <img src="{{ selected_recipe.image_url }}" class="single-recipe-image">    
+  </div>
 
 </div>
 
