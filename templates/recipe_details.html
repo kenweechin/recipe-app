@@ -6,7 +6,7 @@
   <h3 class="selected-recipe-title">{{ selected_recipe.recipe_name }}</h3>
 
   <div class="col s12 m6">
-    {% if image_url %}
+    {% if selected_recipe.image_url %}
     <img src="{{ selected_recipe.image_url }}" class="single-recipe-image">
     {% else %}
     <img src="{{url_for('static', filename='images/image-placeholder.png')}}" class="image-placeholder">
@@ -58,6 +58,15 @@
   </div>
 </div>
 
+<div class="row center-align">
+  <div class="col s6">   
+    <a class="btn-medium green btn"><i class="fas fa-edit"></i></i>Edit</a>
+  </div>
+  <div class="col s6">   
+    <a class="btn-medium red btn"><i class="fas fa-trash"></i></i>Delete</a>
+  </div>
+</div>
+
 <div class="row s12 m12 center-align">
   <div>Describe Your Dish</div>
   <ul>
@@ -65,7 +74,6 @@
       {{selected_recipe.recipe_description}}
     </li>
   </ul>
- 
   <hr style="width:70%">
 </div>
 
@@ -82,9 +90,11 @@
 <div class="row s12 m12 center-align">
   <div>Methods Of Cooking</div>
   <ul>
+     
     <li>
-      {{selected_recipe.recipe_method}} 
+      {{method}} 
     </li>
+     
   </ul>
 </div>
 
