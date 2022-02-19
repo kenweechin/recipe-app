@@ -7,6 +7,7 @@
 
   <div class="col s12 m6">
     <img src="{{ selected_recipe.image_url }}" class="single-recipe-image">
+    <p class="recipe-author center-align">Created By: {{ selected_recipe.created_by }}</p>
   </div>
 
   <div class="col s12 m6 center-align">
@@ -43,6 +44,8 @@
       </div>
     </div>
   </div>
+
+
 </div>
  
 {% endblock %}
