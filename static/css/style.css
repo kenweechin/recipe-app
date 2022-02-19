@@ -210,6 +210,7 @@ h5 {
     text-align: center;
     margin-top: 4rem; 
     margin-bottom: 2rem; 
+    font-family: 'playfair display', sans-serif;
 }
 
 .single-recipe-image {
@@ -217,6 +218,56 @@ h5 {
     object-fit: cover;
     border-radius: 10%;
 }
+
+.selected-diet-type {
+    padding: 0.5rem;
+    
+}
+
+.selected-category-name {
+    padding: 0.5rem;
+}
+
+.category-name-section,
+.diet-type-section,
+.serving-size-section,
+.preparation-time-section,
+.cooking-time-section {
+    font-family: 'playfair display', sans-serif;
+    margin-top: 0.1rem;
+}
+
+.category-name-section-bold,
+.diet-type-section-bold,
+.serving-size-section-bold,
+.preparation-time-section-bold,
+.cooking-time-section-bold {
+    font-family: 'playfair display', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.fa-leaf:before, .fa-utensils:before, .fa-hamburger:before, .fa-stopwatch:before {
+    color: #9b4102;
+}
+
+.second-recipe-part {
+    margin-top: 1rem;
+}
+
+.bottom-cook-time {
+    margin-top: 2rem;
+}
+
+.fa-leaf:before,
+.fa-utensils:before,
+.fa-hamburger:before,
+.fa-stopwatch:before {
+    margin: 0.2rem;
+    font-size: 2rem;
+}
+
+
 
 
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
@@ -364,6 +415,9 @@ button:hover .liquid {
 .card .card-content {
     padding: 0rem;
 }
+
+@media screen and (min-width: 768px) {
+
 
 @media screen and (min-width: 993px) {
     a.brand-logo {

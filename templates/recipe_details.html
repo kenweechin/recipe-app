@@ -3,14 +3,46 @@
 
 <div class="row">
 
-<h3 class="selected-recipe-title">{{ selected_recipe.recipe_name }}</h3>
+  <h3 class="selected-recipe-title">{{ selected_recipe.recipe_name }}</h3>
 
-  <div class="col s12 m3">
-    <img src="{{ selected_recipe.image_url }}" class="single-recipe-image">    
+  <div class="col s12 m6">
+    <img src="{{ selected_recipe.image_url }}" class="single-recipe-image">
   </div>
 
+  <div class="col s12 m6 center-align">
+    <div class="row center-align">
+      <div class="col s6">
+        <i class="fas fa-utensils selected-category-name"></i>
+        <p class="category-name-section">Meal Type</p>
+        <p class="category-name-section-bold">{{ selected_recipe.category_name }}</p>
+      </div>
+      <div class="col s6">
+        <i class="fas fa-leaf selected-diet-type"></i>
+        <p class="diet-type-section">Diet Type</p>
+        <p class="diet-type-section-bold">{{ selected_recipe.diet_type }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6 center-align second-recipe-part">
+    <div class="row center-align">
+      <div class="col s6">
+        <i class="fas fa-hamburger selected-recipe-serving"></i>
+        <p class="serving-size-section">Serving Size(ppl)</p>
+        <p class="serving-size-section-bold">{{ selected_recipe.recipe_serving }}</p>
+      </div>
+      <div class="col s6">
+        <i class="fas fa-stopwatch selected-recipe-preparation-time"></i>
+        <p class="preparation-time-section">Prep Time(mins)</p>
+        <p class="preparation-time-section-bold">{{ selected_recipe.recipe_preparation_time }}</p>
+      </div>
+      <div class="col s12 bottom-cook-time">
+        <i class="fas fa-stopwatch selected-cook-time "></i>
+        <p class="cooking-time-section">Cooking Time(mins)</p>
+        <p class="cooking-time-section-bold">{{ selected_recipe.recipe_cooking_time }}</p>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
+ 
 {% endblock %}
