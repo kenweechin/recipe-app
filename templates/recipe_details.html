@@ -44,8 +44,32 @@
       </div>
     </div>
   </div>
-
-
 </div>
+
+<div class="row s12 m12 center-align">
+  <div>Describe Your Dish</div>
+  <ul>
+    <li>
+      {{selected_recipe.recipe_description}}
+    </li>
+  </ul>
  
+  <hr style="width:70%">
+</div>
+
+<div class="row s12 m12 center-align">
+  <div>Ingredients</div>
+  <ul>
+    <li>
+      {{selected_recipe.recipe_ingredients}}  
+    </li>
+  </ul>
+  <hr style="width:70%">
+</div>
+
+<div class="row s12 m12 center-align">
+  <div>Methods Of Cooking</div>
+  <p>{{selected_recipe.recipe_method}}</p>
+</div>
+
 {% endblock %}
