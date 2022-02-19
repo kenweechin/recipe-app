@@ -6,7 +6,11 @@
   <h3 class="selected-recipe-title">{{ selected_recipe.recipe_name }}</h3>
 
   <div class="col s12 m6">
+    {% if selected_recipe.image_url %}
     <img src="{{ selected_recipe.image_url }}" class="single-recipe-image">
+    {% else %}
+    <img src="{{ url_for('static', filename='images/image-placeholder.png') }}" class="single-recipe-image">
+    {% endif %}
     <p class="recipe-author center-align">Created By: {{ selected_recipe.created_by }}</p>
   </div>
 
@@ -20,7 +24,11 @@
       <div class="col s6">
         <i class="fas fa-leaf selected-diet-type"></i>
         <p class="diet-type-section">Diet Type</p>
+        {% if selected_recipe.diet_type=="None" %}
+        <p>Not Specified</p>
+        {% else %}
         <p class="diet-type-section-bold">{{ selected_recipe.diet_type }}</p>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -35,7 +43,11 @@
       <div class="col s6">
         <i class="fas fa-stopwatch selected-recipe-preparation-time"></i>
         <p class="preparation-time-section">Prep Time(mins)</p>
+        {% if selected_recipe.recipe_preparation_time=="None" %}
+        <p>Not Specified</p>
+        {% else %}
         <p class="preparation-time-section-bold">{{ selected_recipe.recipe_preparation_time }}</p>
+        {% endif %}
       </div>
       <div class="col s12 bottom-cook-time">
         <i class="fas fa-stopwatch selected-cook-time "></i>
@@ -69,7 +81,11 @@
 
 <div class="row s12 m12 center-align">
   <div>Methods Of Cooking</div>
-  <p>{{selected_recipe.recipe_method}}</p>
+  <ul>
+    <li>
+      {{selected_recipe.recipe_method}} 
+    </li>
+  </ul>
 </div>
 
 {% endblock %}
