@@ -6,10 +6,10 @@
   <h3 class="selected-recipe-title">{{ selected_recipe.recipe_name }}</h3>
 
   <div class="col s12 m6">
-    {% if selected_recipe.image_url %}
+    {% if image_url %}
     <img src="{{ selected_recipe.image_url }}" class="single-recipe-image">
     {% else %}
-    <img src="{{ url_for('static', filename='images/image-placeholder.png') }}" class="single-recipe-image">
+    <img src="{{url_for('static', filename='images/image-placeholder.png')}}" class="image-placeholder">
     {% endif %}
     <p class="recipe-author center-align">Created By: {{ selected_recipe.created_by }}</p>
   </div>
