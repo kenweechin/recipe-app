@@ -296,6 +296,11 @@ h5 {
     white-space: pre-wrap;
 }
 
+.method-detail {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
 /******************* button designation for Log In and Sign Up page ********************/
 .register-button,
