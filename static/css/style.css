@@ -281,6 +281,15 @@ h5 {
     margin: 0.5rem;
 }
 
+.describe-header,
+.ingredient-header,
+.method-header {
+    font-family: 'playfair display', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: large;
+}
+
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
 /******************* button designation for Log In and Sign Up page ********************/
 .register-button,
@@ -426,9 +435,6 @@ button:hover .liquid {
 .card .card-content {
     padding: 0rem;
 }
-
-@media screen and (min-width: 768px) {
-
 
 @media screen and (min-width: 993px) {
     a.brand-logo {
