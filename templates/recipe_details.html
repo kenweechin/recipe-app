@@ -66,35 +66,38 @@
       <i class="fas fa-edit"></i>Edit</a>
   </div>
   <div class="col s6">
-    <a href="{{ url_for('delete_recipe', recipe_id=selected_recipe._id) }}" class="btn-medium red btn"><i class="fas fa-trash"></i></i>Delete</a>
+    <a href="{{ url_for('delete_recipe', recipe_id=selected_recipe._id) }}" class="btn-medium red btn"><i
+        class="fas fa-trash"></i></i>Delete</a>
   </div>
   {% endif %}
 </div>
 
 <div class="row s12 m12 center-align">
   <div class="describe-header">Describe Your Dish</div>
-    {{selected_recipe.recipe_description}}
-  <hr style="width:70%">
-</div>
-
-<div class="row s12 m12 center-align">
-  <div class="ingredient-header">Ingredients</div>
   <ul>
-    <li>
-      {{selected_recipe.recipe_ingredients}}
+    <li class="description-detail">
+      {{ selected_recipe.recipe_description }}
     </li>
   </ul>
   <hr style="width:70%">
 </div>
 
 <div class="row s12 m12 center-align">
+  <div class="ingredient-header">Ingredients</div>
+  <ul>
+    <li class="ingredient-detail">
+      {{ selected_recipe.recipe_ingredients }}
+    </li>
+  </ul>
+<hr style="width:70%">
+</div>
+
+<div class="row s12 m12 center-align">
   <div class="method-header">Methods Of Cooking</div>
   <ul>
-
-    <li>
-      {{method}}
+    <li class="method-detail">
+      {{ selected_recipe.recipe_method }}
     </li>
-
   </ul>
 </div>
 
