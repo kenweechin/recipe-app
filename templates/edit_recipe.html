@@ -11,7 +11,8 @@
                 <!-- recipe name-->
                 <div class="input-field col s12">
                     <i class="fas fa-book prefix"></i>
-                    <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="100" class="materialize-textarea validate" required></textarea>
+                    <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="200"
+                        class="materialize-textarea validate" required> {{ recipe.recipe_name }}</textarea>
                     <label for="recipe_name">Create Your Recipe Name<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
             </div>
@@ -20,7 +21,8 @@
                 <!-- recipe description-->
                 <div class="input-field col s12">
                     <i class="far fa-edit prefix"></i>
-                    <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="100" class="materialize-textarea validate" required></textarea>
+                    <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="500" 
+                        class="materialize-textarea validate" required>{{ recipe.recipe_description }}</textarea>
                     <label for="recipe_description">Describe Your Recipe<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
             </div>
@@ -29,9 +31,13 @@
                 <!-- recipe meal type category selection-->
                 <div class="input-field col s12 m4">
                     <select class="validate" id="category_name" name="category_name" required>
-                        <option value="" disabled selected>Choose your meal type</option>
+                        <option value="" disabled>Choose your meal type</option>
                         {% for category in categories %}
-                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% if category.category_name == recipe.category_name %}
+                                <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                            {% else %}
+                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% endif %}
                         {% endfor %}
                     </select>
                     <label for="category_name">Meal Type<i class="fas fa-asterisk fa-xs"></i></label>
@@ -39,9 +45,13 @@
                 <!-- recipe dietery selection-->
                 <div class="input-field col s12 m4">
                     <select class="validate" id="diet_type" name="diet_type" required>
-                        <option value="" disabled selected>Choose your diet type</option>
+                        <option value="" disabled>Choose your diet type</option>
                         {% for diet in dietery %}
+                            {% if diet.diet_type == recipe.diet_type %}
+                                <option value="{{ diet.diet_type }}" selected>{{ diet.diet_type }}</option>
+                            {% else %}
                             <option value="{{ diet.diet_type }}">{{ diet.diet_type }}</option>
+                            {% endif %}
                         {% endfor %}
                     </select>
                     <label for="diet_type">Dietery<i class="fas fa-asterisk fa-xs"></i></label>
@@ -49,7 +59,9 @@
                 <!-- recipe serving-->
                 <div class="input-field col s12 m4">
                     <i class="fas fa-utensils prefix"></i>
-                    <textarea id="recipe_serving" name="recipe_serving" class="materialize-textarea validate" required></textarea>
+                    <textarea id="recipe_serving" name="recipe_serving" class="materialize-textarea validate" required>
+                        {{- recipe.recipe_serving -}}
+                    </textarea>
                     <label for="recipe_serving">Serving Size <i class="fas fa-asterisk fa-xs"></i></label>
                     
                 </div>
@@ -60,12 +72,14 @@
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="fas fa-stopwatch prefix"></i>
-                            <input id="recipe_preparation_time" name="recipe_preparation_time" type="text" class="validate" required>
+                            <input id="recipe_preparation_time" name="recipe_preparation_time" 
+                                value="{{ recipe.recipe_preparation_time }}" type="text" class="validate" required>
                             <label for="recipe_preparation_time">Preparation Time(min)<i class="fas fa-asterisk fa-xs"></i></label>
                         </div>
                         <div class="input-field col s6">
                             <i class="fas fa-stopwatch prefix"></i>
-                            <input id="recipe_cooking_time" name="recipe_cooking_time" type="text" class="validate" required>
+                            <input id="recipe_cooking_time" name="recipe_cooking_time"
+                                value="{{ recipe.recipe_cooking_time }}" type="text" class="validate" required>
                             <label for="recipe_cooking_time">Cooking Time(min)<i class="fas fa-asterisk fa-xs"></i></label>
                         </div>
                     </div>
@@ -74,7 +88,9 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-list-ol prefix"></i>
-                    <textarea id="recipe_ingredients" name="recipe_ingredients" class="materialize-textarea" required></textarea>
+                    <textarea id="recipe_ingredients" name="recipe_ingredients" class="materialize-textarea" required>
+                        {{- recipe.recipe_ingredients -}}
+                    </textarea>
                     <label for="recipe_ingredients">Ingredients(New Line For Each)<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
             </div>
@@ -82,7 +98,9 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-list-alt prefix"></i>
-                    <textarea id="recipe_method" name="recipe_method" class="materialize-textarea" required></textarea>
+                    <textarea id="recipe_method" name="recipe_method" class="materialize-textarea" required>
+                        {{- recipe.recipe_method -}}
+                    </textarea>
                     <label for="recipe_method">Methods(New Line For Each)<i class="fas fa-asterisk fa-xs"></i></label>
                 </div>
             </div>
@@ -90,14 +108,17 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-list-alt prefix"></i>
-                    <input id="image_url" type="url" name="image_url" class="validate">
+                    <input id="image_url" type="url" name="image_url" class="validate" value="{{ recipe.image_url }}" >
                     <label for="image_url">Upload Your Image (Leave blank if you don't have any)</label>
                 </div>
             </div>
             <!-- submit button-->
             <div class= "row">
                 <div class="col s12 center-align">
-                    <button class="btn-large darken-1 dark-orange text-shadow" type="submit">
+                    <a href="{{ url_for('recipe_details', recipe_id=recipe._id)}}" class="btn-large red text-shadow">
+                        Cancel <i class="fas fa-times-circle right"></i>
+                    </a>
+                    <button class="btn-large darken-1 green text-shadow" type="submit">
                        Edit Recipe<i class="fas fa-edit"></i>
                 </div>
             </div>
