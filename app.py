@@ -89,6 +89,7 @@ def logout():
 
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+
     if request.method == "POST":
         recipe = {
             "recipe_name": request.form.get("recipe_name"),
@@ -98,8 +99,8 @@ def add_recipe():
             "recipe_serving": request.form.get("recipe_serving"),
             "recipe_preparation_time": request.form.get("recipe_preparation_time"),
             "recipe_cooking_time": request.form.get("recipe_cooking_time"),
-            "recipe_ingredients": request.form.get("recipe_ingredients"),
-            "recipe_method": request.form.get("recipe_method"),
+            "recipe_ingredients": request.form.getlist("recipe_ingredients"),
+            "recipe_method": request.form.getlist("recipe_method"),
             "image_url": request.form.get("image_url"),
             "created_by": session["user"]
         }
@@ -130,11 +131,12 @@ def edit_recipe(recipe_id):
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)},submit)
         flash("Recipe Successfully Updated")
+        return redirect(url_for("recipe_details", recipe_id=recipe_id))
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     dietery = mongo.db.dietery.find().sort("diet_type", 1)
-    return render_template("edit_recipe.html", recipe=recipe, categories = categories, dietery = dietery )
+    return render_template("edit_recipe.html", recipe=recipe, categories=categories, dietery=dietery)
 
 
 @app.route("/delete_recipe/<recipe_id>")
@@ -147,7 +149,7 @@ def delete_recipe(recipe_id):
 @app.route('/recipe_details/<recipe_id>')
 def recipe_details(recipe_id):
     selected_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template ("recipe_details.html", selected_recipe=selected_recipe)
+    return render_template("recipe_details.html", selected_recipe=selected_recipe)
 
 
 if __name__ == "__main__":
