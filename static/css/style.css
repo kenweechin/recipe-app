@@ -44,7 +44,7 @@ nav a.sidenav-trigger i {
 .slider .slides li img {
     height: 100%;
     width: 100%;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-blend-mode: darken;
     background: rgba(0, 0, 0, .5);
@@ -166,12 +166,12 @@ h5 {
 
 
 /******************* user's profile page********************/
-.number-recipe-count{
+.number-recipe-count {
     text-align: center;
     font-family: 'playfair display', sans-serif;
 }
 
-.highlight-text  {
+.highlight-text {
     font-weight: bold;
     font-style: italic;
     padding: 0.5rem;
@@ -187,7 +187,7 @@ h5 {
 
 .card-category-name {
     font-weight: bold;
-    text-align : center;
+    text-align: center;
 }
 
 .recipe-name,
@@ -208,8 +208,8 @@ h5 {
 .selected-recipe-title {
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 4rem; 
-    margin-bottom: 2rem; 
+    margin-top: 4rem;
+    margin-bottom: 2rem;
     font-family: 'playfair display', sans-serif;
 }
 
@@ -222,7 +222,7 @@ h5 {
 
 .selected-diet-type {
     padding: 0.5rem;
-    
+
 }
 
 .selected-category-name {
@@ -248,7 +248,10 @@ h5 {
     font-style: italic;
 }
 
-.fa-leaf:before, .fa-utensils:before, .fa-hamburger:before, .fa-stopwatch:before {
+.fa-leaf:before,
+.fa-utensils:before,
+.fa-hamburger:before,
+.fa-stopwatch:before {
     color: #9b4102;
 }
 
@@ -268,7 +271,9 @@ h5 {
     font-size: 2rem;
 }
 
-.btn, .btn-large, .btn-small {
+.btn,
+.btn-large,
+.btn-small {
     border-radius: 1.5rem;
     margin: 2rem;
 }
@@ -378,16 +383,24 @@ button:hover .liquid {
 
 .fa-asterisk:before {
     padding: 0.5rem;
-    color:red;
+    color: red;
 }
 
-.btn, .btn-large, .btn-small {
+.btn,
+.btn-large,
+.btn-small {
     background-color: #d10303;
     border-radius: 2rem;
     margin: 2rem;
 }
 
-.btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i {
+.btn i,
+.btn-large i,
+.btn-small i,
+.btn-floating i,
+.btn-large i,
+.btn-small i,
+.btn-flat i {
     font-size: 1rem;
     line-height: inherit;
 }
@@ -440,6 +453,40 @@ button:hover .liquid {
         font-family: Arial;
         letter-spacing: 3px;
         z-index: 1;
+    }
+
+    .input-field.col .prefix~label,
+    .input-field.col .prefix~.validate~label {
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        font-size: .6rem;
+    }
+
+    .prep-time,
+    .cook-time {
+        font-size: .5rem;
+    }
+
+    .btn, .btn-large, .btn-small {
+        background-color: #d10303;
+        border-radius: 2rem;
+        margin: .5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .input-field.col .prefix~label,
+    .input-field.col .prefix~.validate~label {
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1rem;
+    }
+
+    .prep-time,
+    .cook-time {
+        font-size: 1rem;
     }
 }
 
