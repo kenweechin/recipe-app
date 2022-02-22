@@ -105,6 +105,25 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+
+####################test
+@app.route('/all_recipes')
+def all_recipes():
+    '''
+    READ.
+    Displays all the recipes from the database using pagination.
+    The limit is set to 8 recipes per page.
+    Also displayes the number of all recipes.
+    '''
+    # get total of all the recipes in db
+    recipes = mongo.db.recipes.find()
+
+    return render_template("all_recipes.html", recipes=recipes)
+####################test
+
+
+
+
 # Logout
 @app.route("/logout")
 def logout():

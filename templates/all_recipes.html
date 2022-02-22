@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col s12 m8 offset-m2">
+      <!--Display logged in user's name-->
+      {% if session.user %}
+        <div>
+            <h2 class="center-align dark-green text-darken">
+                {{ username }}'s Recipe
+            </h2>
+        </div>
+        {% else %}
+        {% endif %}
+    </div>
+</div>
+
+<!--Display the number of created recipes by the user-->
+{% if session.user %}
+<p class="number-recipe-count"> You have created <span class="highlight-text"> {{ num_of_rec }}</span> recipes</p>
+{% else %}
+<div>
+  <p class="all-recipes-title center-align"><a href="{{ url_for('login')}}">Log In</a> 
+    or <a href="{{ url_for('register')}}">Sign Up</a> to CREATE your own recipe!</p></div>
+{% endif %}
+<div class="row">
+    <div class="col s12 center-align">
+      {% if session.user %}
+        <a href="{{ url_for('add_recipe') }}" class="btn"><i class="material-icons center">Click Me To Add New
+                Recipe</i>
+        </a>
+        {% else %}
+        {% endif %}
+    </div>
+</div>
+
+<div class="row">
+  <!--Display the card images of the recipe created by the user-->
+    {% for recipe in recipes %}
+    <div class="col s12 m3">
+      <div class="card medium">
+        <div class="card-image">
+          <a href="{{ url_for('recipe_details', recipe_id=recipe._id ) }}">
+            <img src="{{ recipe.image_url }}">
+          </a>
+        </div>
+
+        <div class="card-content">
+          <h5 class="card-category-name">{{ recipe.category_name }}</h5>
+          <hr>
+          <div class="recipe-name"><i class="fas fa-concierge-bell"></i>{{ recipe.recipe_name }}</div>                 
+          <div class="diet-type">{{ recipe.diet_type }}</div>
+          <div class="recipe-serving"><i class="fas fa-male"></i>{{ recipe.recipe_serving }}</div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}

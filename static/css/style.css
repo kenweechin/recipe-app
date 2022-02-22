@@ -306,6 +306,12 @@ h5 {
     padding-right: 4rem;
 }
 
+/******************* all recipes page********************/
+.all-recipes-title {
+    font-family: 'playfair display', sans-serif;
+    font-size: 2rem;
+}
+
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
 /******************* button designation for Log In and Sign Up page ********************/
 .register-button,
@@ -473,6 +479,10 @@ button:hover .liquid {
         border-radius: 2rem;
         margin: .5rem;
     }
+    .all-recipes-title {
+        font-family: 'playfair display', sans-serif;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -487,6 +497,11 @@ button:hover .liquid {
     .prep-time,
     .cook-time {
         font-size: 1rem;
+    }
+
+    .all-recipes-title {
+        font-family: 'playfair display', sans-serif;
+        font-size: 2rem;
     }
 }
 

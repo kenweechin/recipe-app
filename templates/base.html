@@ -27,7 +27,7 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_recipes')}}"><i class="fas fa-home"></i>Home</a></li>
-                    <li><a href=""><i class="fas fa-book-open"></i>All Recipes</a></li>
+                    <li><a href="{{ url_for('all_recipes')}}"><i class="fas fa-book-open"></i>All Recipes</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user'])}}"><i class="fas fa-book"></i>Your Recipe</a></li>
                         <li><a href="{{ url_for('add_recipe')}}"><i class="fas fa-plus-square"></i>New Recipe</a></li>
