@@ -114,7 +114,9 @@ def all_recipes():
     '''
     # get total of all the recipes in db
     recipes = mongo.db.recipes.find()
-    return render_template("all_recipes.html", recipes=recipes)
+    num_of_all_rec = recipes.count()
+    return render_template("all_recipes.html", recipes=recipes, 
+        num_of_all_rec=num_of_all_rec)
 
 
 # Logout

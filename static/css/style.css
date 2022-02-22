@@ -177,6 +177,7 @@ h5 {
     padding: 0.5rem;
     text-decoration: underline;
     text-decoration-color: red;
+    text-decoration-thickness: 0.3rem;
 }
 
 .card .card-image img {
@@ -310,6 +311,21 @@ h5 {
 .all-recipes-title {
     font-family: 'playfair display', sans-serif;
     font-size: 2rem;
+    font-style: italic;
+}
+
+.total-recipe-count {
+    font-family: 'playfair display', sans-serif;
+    font-size: 2rem;
+}
+
+.registered-underline,
+.login-underline {
+    text-decoration: underline;
+    text-decoration-color: #ffb703;
+    text-underline-offset: 1rem;
+    color: #219ebc;
+    
 }
 
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */

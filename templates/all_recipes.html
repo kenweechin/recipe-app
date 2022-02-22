@@ -19,9 +19,10 @@
 {% if session.user %}
 <p class="number-recipe-count"> You have created <span class="highlight-text"> {{ num_of_rec }}</span> recipes</p>
 {% else %}
+<p class="total-recipe-count center-align"> TOTAL RECIPES: <span class="highlight-text"> {{ num_of_all_rec }}</span>'s</p>
 <div>
-  <p class="all-recipes-title center-align"><a href="{{ url_for('login')}}">Log In</a> 
-    or <a href="{{ url_for('register')}}">Sign Up</a> to CREATE your own recipe!</p></div>
+  <p class="all-recipes-title center-align"><a href="{{ url_for('login')}}" class="login-underline">Log In</a> 
+    or <a href="{{ url_for('register')}}" class="registered-underline">Sign Up</a> to CREATE your own recipe!</p></div>
 {% endif %}
 <div class="row">
     <div class="col s12 center-align">
