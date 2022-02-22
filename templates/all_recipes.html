@@ -5,24 +5,17 @@
     <div class="col s12 m8 offset-m2">
       <!--Display logged in user's name-->
       {% if session.user %}
-        <div>
-            <h2 class="center-align dark-green text-darken">
-                {{ username }}'s Recipe
-            </h2>
-        </div>
-        {% else %}
-        {% endif %}
+      <p class="total-recipe-count center-align"> TOTAL RECIPES: <span class="highlight-text"> {{ num_of_all_rec }}</span>'s</p>
+      {% endif %}
     </div>
 </div>
 
 <!--Display the number of created recipes by the user-->
 {% if session.user %}
-<p class="number-recipe-count"> You have created <span class="highlight-text"> {{ num_of_rec }}</span> recipes</p>
+<h5 class=" overview-text center align"> An overview of all recipes</h5>
 {% else %}
-<p class="total-recipe-count center-align"> TOTAL RECIPES: <span class="highlight-text"> {{ num_of_all_rec }}</span>'s</p>
-<div>
-  <p class="all-recipes-title center-align"><a href="{{ url_for('login')}}" class="login-underline">Log In</a> 
-    or <a href="{{ url_for('register')}}" class="registered-underline">Sign Up</a> to CREATE your own recipe!</p></div>
+<p class="all-recipes-title center-align"><a href="{{ url_for('login')}}" class="login-underline">Log In</a> 
+  or <a href="{{ url_for('register')}}" class="registered-underline">Sign Up</a> to CREATE your own recipe!</p></div>
 {% endif %}
 <div class="row">
     <div class="col s12 center-align">

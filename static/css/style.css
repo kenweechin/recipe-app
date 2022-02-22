@@ -329,7 +329,14 @@ h5 {
     text-decoration-color: #ffb703;
     text-underline-offset: 1rem;
     color: #219ebc;
-    
+}
+
+.overview-text {
+    text-decoration: underline;
+    text-decoration-color: #ffb703;
+    text-underline-offset: 1rem;
+    color: #219ebc;
+    padding-bottom: 2rem;
 }
 
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
