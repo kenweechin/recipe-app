@@ -339,6 +339,15 @@ h5 {
     padding-bottom: 2rem;
 }
 
+.pagination li {
+    display: inline-block;
+    border-radius: 5rem;
+    text-align: center;
+    vertical-align: top;
+    height: 30px;
+    font-size: 1.5rem;
+}
+
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
 /******************* button designation for Log In and Sign Up page ********************/
 .register-button,

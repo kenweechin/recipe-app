@@ -50,4 +50,19 @@
     </div>
     {% endfor %}
   </div>
+
+<div>
+  <ul class="pagination center-align">
+    {% for recipe_pagenum in pages %}
+      {% if recipe_pagenum == page %}
+        <li class="page-item active">
+            <span class="page-link">{{ recipe_pagenum }}
+                <span class="sr-only">(current)</span>
+            </span>
+        </li>
+      {% else %}
+        <li class="pagination-item waves-effect"><a class="pagination-link" href="{{ url_for('all_recipes', page=recipe_pagenum) }}">{{ recipe_pagenum }}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
 {% endblock %}

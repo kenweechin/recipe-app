@@ -5,6 +5,7 @@ from flask import (
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
+import math
 if os.path.exists("env.py"):
     import env
 
@@ -112,11 +113,21 @@ def all_recipes():
     This page can be browsed by either registered/logged in 
     user or unregistered/logged out user. 
     '''
+    # CREDITS: the pagination's idea implemented here is derived and modified
+    # from Spencer Barriball's project
+
+    # number of recipes show per page 
+    recipe_per_page = 8
+    page = int(request.args.get('page', 1))
+
     # get total of all the recipes in db
-    recipes = mongo.db.recipes.find()
+    recipes = mongo.db.recipes.find().skip((page - 1)*recipe_per_page).limit(recipe_per_page)
     num_of_all_rec = recipes.count()
+
+    pages= range(1, int(math.ceil(num_of_all_rec / recipe_per_page)) +1)
+
     return render_template("all_recipes.html", recipes=recipes, 
-        num_of_all_rec=num_of_all_rec)
+        num_of_all_rec=num_of_all_rec, pages=pages, page=page)
 
 
 # Logout
