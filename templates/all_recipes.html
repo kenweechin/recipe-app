@@ -2,67 +2,95 @@
 {% block content %}
 
 <div class="row">
-    <div class="col s12 m8 offset-m2">
-      <!--Display logged in user's name-->
-      {% if session.user %}
-      <p class="total-recipe-count center-align"> TOTAL RECIPES: <span class="highlight-text"> {{ num_of_all_rec }}</span>'s</p>
-      {% endif %}
-    </div>
+  <div class="col s12 m8 offset-m2">
+    <!--Display logged in user's name-->
+    {% if session.user %}
+    <p class="total-recipe-count center-align"> TOTAL RECIPES: <span class="highlight-text">
+        {{ num_of_all_rec }}</span>'s</p>
+    {% endif %}
+  </div>
 </div>
 
 <!--Display the number of created recipes by the user-->
 {% if session.user %}
 <h5 class=" overview-text center align"> An overview of all recipes</h5>
 {% else %}
-<p class="all-recipes-title center-align"><a href="{{ url_for('login')}}" class="login-underline">Log In</a> 
-  or <a href="{{ url_for('register')}}" class="registered-underline">Sign Up</a> to CREATE your own recipe!</p></div>
-{% endif %}
-<div class="row">
-    <div class="col s12 center-align">
-      {% if session.user %}
-        <a href="{{ url_for('add_recipe') }}" class="btn"><i class="material-icons center">Click Me To Add New
-                Recipe</i>
-        </a>
-        {% else %}
-        {% endif %}
-    </div>
+<p class="all-recipes-title center-align"><a href="{{ url_for('login')}}" class="login-underline">Log In</a>
+  or <a href="{{ url_for('register')}}" class="registered-underline">Sign Up</a> to CREATE your own recipe!</p>
 </div>
+{% endif %}
 
-<div class="row">
-  <!--Display the card images of the recipe created by the user-->
-    {% for recipe in recipes %}
-    <div class="col s12 m3">
-      <div class="card medium">
-        <div class="card-image">
-          <a href="{{ url_for('recipe_details', recipe_id=recipe._id ) }}">
-            <img src="{{ recipe.image_url }}">
-          </a>
-        </div>
-
-        <div class="card-content">
-          <h5 class="card-category-name">{{ recipe.category_name }}</h5>
-          <hr>
-          <div class="recipe-name"><i class="fas fa-concierge-bell"></i>{{ recipe.recipe_name }}</div>                 
-          <div class="diet-type">{{ recipe.diet_type }}</div>
-          <div class="recipe-serving"><i class="fas fa-male"></i>{{ recipe.recipe_serving }}</div>
-        </div>
+<div class="row  ">
+  <form action="{{ url_for('search') }}" method="post" class="col s12">
+    <div class="row center-align">
+      <div class=" input-field col s12">
+        <i class="fas fa-search prefix text-darken-4 text-shadow"></i>
+        <input type="text" name="query" id="query" minlength="3" class="validate" required>
+        <label for="query">Browse Recipes</label>
+      </div>
+      <div class="col s12">
+        <button type="submit" class="light-blue darken-1 btn text-shadow">
+          <i class="fas fa-search left"></i>Search Recipes
+        </button>
+        <a href="{{ url_for('all_recipes') }}" class="red btn text-shadow">Reset</a>
       </div>
     </div>
-    {% endfor %}
+  </form>
+</div>
+
+
+<div class="row">
+  <div class="col s12 center-align">
+    {% if session.user %}
+    <a href="{{ url_for('add_recipe') }}" class="btn"><i class="material-icons center">Click Me To Add New
+        Recipe</i>
+    </a>
+    {% else %}
+    {% endif %}
   </div>
+</div>
+
+{% if recipes|length >0 %}
+<div class="row">
+  <!--Display the card images of the recipe created by the user-->
+  {% for recipe in recipes %}
+  <div class="col s12 m3">
+    <div class="card medium">
+      <div class="card-image">
+        <a href="{{ url_for('recipe_details', recipe_id=recipe._id ) }}">
+          <img src="{{ recipe.image_url }}">
+        </a>
+      </div>
+
+      <div class="card-content">
+        <h5 class="card-category-name">{{ recipe.category_name }}</h5>
+        <hr>
+        <div class="recipe-name"><i class="fas fa-concierge-bell"></i>{{ recipe.recipe_name }}</div>
+        <div class="diet-type">{{ recipe.diet_type }}</div>
+        <div class="recipe-serving"><i class="fas fa-male"></i>{{ recipe.recipe_serving }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+ 
+</div>
+{% else %}
+  <h5 class="red-text center align">Ops! No results were found</h5>
+{% endif %}
 
 <div>
   <ul class="pagination center-align">
     {% for recipe_pagenum in pages %}
-      {% if recipe_pagenum == page %}
-        <li class="page-item active">
-            <span class="page-link">{{ recipe_pagenum }}
-                <span class="sr-only">(current)</span>
-            </span>
-        </li>
-      {% else %}
-        <li class="pagination-item waves-effect"><a class="pagination-link" href="{{ url_for('all_recipes', page=recipe_pagenum) }}">{{ recipe_pagenum }}</a></li>
-      {% endif %}
+    {% if recipe_pagenum == page %}
+    <li class="page-item active">
+      <span class="page-link">{{ recipe_pagenum }}
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    {% else %}
+    <li class="pagination-item waves-effect"><a class="pagination-link"
+        href="{{ url_for('all_recipes', page=recipe_pagenum) }}">{{ recipe_pagenum }}</a></li>
+    {% endif %}
     {% endfor %}
 </div>
 {% endblock %}
