@@ -348,6 +348,12 @@ h5 {
     font-size: 1.5rem;
 }
 
+.row .col.s8 {
+    width: 66.6666666667%;
+    margin-left: 15%;
+    left: auto;
+    right: auto;
+}
 /* Button design is derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52  */
 /******************* button designation for Log In and Sign Up page ********************/
 .register-button,
