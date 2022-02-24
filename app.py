@@ -28,14 +28,14 @@ HOME PAGE
 @app.route("/get_recipes")
 def get_recipes():
     recipes = mongo.db.recipes.find()
-    return render_template("index.html", recipes=recipes)
+    return render_template("index.html", recipes=recipes, title="Home")
 
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
-    return render_template("all_recipes.html", recipes=recipes)
+    return render_template("all_recipes.html", recipes=recipes, title="Search")
 
 
 '''
@@ -67,7 +67,7 @@ def register():
         flash("Registration Completed!")
         return redirect(url_for("profile", username=session["user"]))
 
-    return render_template("register.html")
+    return render_template("register.html", title="Register")
 
 
 # Login
@@ -96,7 +96,7 @@ def login():
             flash("Sorry, incorrect username and/or password")
             return redirect(url_for("login"))
 
-    return render_template("login.html")
+    return render_template("login.html", title="LogIn")
 
 
 # Registered User's Profile
@@ -109,7 +109,7 @@ def profile(username):
         my_recipes = mongo.db.recipes.find({"created_by": username})
         # Count the number of recipes created by the user and display it on the page
         num_of_rec = my_recipes.count()
-        return render_template("profile.html", username=username, recipes=recipes, my_recipes=my_recipes, num_of_rec=num_of_rec)
+        return render_template("profile.html", username=username, recipes=recipes, my_recipes=my_recipes, num_of_rec=num_of_rec, title="Profile")
     return redirect(url_for("login"))
 
 
@@ -134,7 +134,7 @@ def all_recipes():
     pages= range(1, int(math.ceil(num_of_all_rec / recipe_per_page)) +1)
 
     return render_template("all_recipes.html", recipes=recipes, 
-        num_of_all_rec=num_of_all_rec, pages=pages, page=page)
+        num_of_all_rec=num_of_all_rec, pages=pages, page=page, title="All Recipes")
 
 
 # Logout
@@ -179,7 +179,7 @@ def add_recipe():
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     dietery = mongo.db.dietery.find().sort("diet_type", 1)
-    return render_template("add_recipe.html", categories=categories, dietery=dietery)
+    return render_template("add_recipe.html", categories=categories, dietery=dietery, title="Add Recipe")
 
 
 # Edit Recipe
@@ -210,7 +210,7 @@ def edit_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     dietery = mongo.db.dietery.find().sort("diet_type", 1)
-    return render_template("edit_recipe.html", recipe=recipe, categories=categories, dietery=dietery)
+    return render_template("edit_recipe.html", recipe=recipe, categories=categories, dietery=dietery, title="Edit Recipe")
 
 
 # Delete Recipe
@@ -228,7 +228,7 @@ def delete_recipe(recipe_id):
 @app.route('/recipe_details/<recipe_id>')
 def recipe_details(recipe_id):
     selected_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("recipe_details.html", selected_recipe=selected_recipe)
+    return render_template("recipe_details.html", selected_recipe=selected_recipe, title="Recipe Details")
 
 
 if __name__ == "__main__":
