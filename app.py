@@ -31,13 +31,6 @@ def get_recipes():
     return render_template("index.html", recipes=recipes, title="Home")
 
 
-@app.route("/search", methods=["GET", "POST"])
-def search():
-    query = request.form.get("query")
-    recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
-    return render_template("all_recipes.html", recipes=recipes, title="Search")
-
-
 '''
 ROUTES FOR USERS
 '''
@@ -75,7 +68,7 @@ def register():
 def login():
     '''
     Check if the username and password entered are valid, if so
-    it will add the user to the session.                                            
+    it will add the user to the session.                                           
     '''
     if request.method == "POST":
         existing_user = mongo.db.users.find_one({
@@ -113,6 +106,35 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+# Logout
+@app.route("/logout")
+def logout():
+    '''
+    Log out the user and redirect to the login page.
+    '''
+    flash("You've have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
+
+
+'''
+ROUTES FOR RECIPES
+'''
+
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    '''
+    A function that find the recipes on a query.
+    User input is the query.
+    User's list of recipes is then rendered on search.html page
+    '''
+    query = request.form.get("query")
+    # find instances of the keyword entered in recipe_name, category_name, or diet_type
+    recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
+    return render_template("all_recipes.html", recipes=recipes, title="Search")
+
+
 @app.route('/all_recipes')
 def all_recipes():
     '''
@@ -137,20 +159,6 @@ def all_recipes():
         num_of_all_rec=num_of_all_rec, pages=pages, page=page, title="All Recipes")
 
 
-# Logout
-@app.route("/logout")
-def logout():
-    '''
-    Log out the user and redirect to the login page.
-    '''
-    flash("You've have been logged out")
-    session.pop("user")
-    return redirect(url_for("login"))
-
-
-'''
-ROUTES FOR RECIPES
-'''
 # Insert Recipe
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
