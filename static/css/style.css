@@ -85,7 +85,7 @@ h5 {
     background: url("../images/login-image.jpg")no-repeat center;
     min-height: 100vh;
     background-size: cover;
-    opacity: 0.9;
+    background-blend-mode: darken;
 }
 
 .login-header {
@@ -118,6 +118,19 @@ h5 {
     font-family: 'playfair display', sans-serif;
     font-weight: bold;
     padding-top: 1.5rem;
+}
+
+.register-divert-link {
+    font-family: 'playfair display', sans-serif;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    color: black;
+}
+
+.register-link {
+    color: rgb(24, 203, 226);
+    font-weight: bold;
+    font-style: italic;
 }
 
 .register-background-image {
