@@ -239,6 +239,12 @@ def recipe_details(recipe_id):
     return render_template("recipe_details.html", selected_recipe=selected_recipe, title="Recipe Details")
 
 
+@app.errorhandler(404)
+def error_404(error):
+    return render_template('errors/404.html', error=True,
+        title ="Page Not Found"), 404
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
