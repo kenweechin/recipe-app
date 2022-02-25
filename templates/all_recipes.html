@@ -47,7 +47,7 @@
   </div>
 </div>
 
-{% if recipes|length >0 %} 
+{% if recipes %} 
 <div class="row">
   <!--Display the card images of the recipe created by the user-->
   {% for recipe in recipes %}
@@ -58,7 +58,6 @@
           <img src="{{ recipe.image_url }}">
         </a>
       </div>
-
       <div class="card-content">
         <h5 class="card-category-name">{{ recipe.category_name }}</h5>
         <hr>
