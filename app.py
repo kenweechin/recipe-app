@@ -241,8 +241,20 @@ def recipe_details(recipe_id):
 
 @app.errorhandler(404)
 def error_404(error):
+    '''
+    Handle 404 error 
+    '''
     return render_template('errors/404.html', error=True,
         title ="Page Not Found"), 404
+
+
+@app.errorhandler(500)
+def error_500(error):
+    '''
+    Handle internal server error 
+    '''
+    return render_template('errors/500.html', error=True,
+        title ="Internal Server Error"), 500
 
 
 if __name__ == "__main__":

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="center-align">
+    <h1 class="error-title center-align  red-text">500 Internal Server Error</h1>
+    <h3 class="error-subtitle center-align">Oops! Something went wrong.<br>The server
+            encountered an internal error and was unable to process your request. Go back to 
+        <a href="{{ url_for('get_recipes')}}">Home Page</a> to choose a new direction.</h3>
+    
+</div>
+
+{% endblock %}
