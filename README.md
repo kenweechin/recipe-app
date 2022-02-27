@@ -124,4 +124,136 @@ The logo of the website is located at the top left position, whereas the remaini
 * Add Recipe
 * Log Out
 
+### **Home Page Features**
 
+* Home page consists of a landing image and follow up by a button that redirects the user to the "All Recipe" page which to glance the overview of all the recipes created.
+
+### **All Recipes Page Features**
+
+![All Recipes](/static/images/allrecipes.png)
+
+* The All Recipes page displays all the recipes card profile created by different users. 
+* Non-registered and registered user has the accessibility to browse all those recipes. 
+* At the top section of the page, there are **Log In** and **Sign Up** links for non-registered user/logged out user. The reason of placing these links at top is to encourage the user to log in to create more recipes, and for non-registered user to sign up an account. 
+* Follow up the links are the browse recipe bar section, where all the users can type in the keyword which in turn will return the desire results. Orelse, the message will show no results were found.
+* Each of the recipe card is showing the following features:
+    * Recipe image
+    * Recipe meal type ( Breakfast, Lunch, Dinner, or Dessert)
+    * Recipe diet type ( Normal, Vegan, Low Carb, Diary/Lactose Free)
+    * Recipe serving size
+
+### **Recipe Details Page**
+![Recipe Details](/static/images/recipedetails.png)
+
+* The Recipe Detail page displays the details of the recipe. 
+* Recipe name is shown at the top of the page.
+* Recipe image and (meal type, diet type, serving size, preparation time, cooking time) are sitting side by side. The reason for this arrangement is that, this will show the overview of a recipe. Furthermore, once the user is landed on this page, either any type of resolution, these section will display to the user first. 
+* Then, as the user scrolls down the page, it shows the dish description, ingredients, and cooking methods section. These elements are placing at below the page because those description elements tend to contain larger space for the content. Hence this page arrangement yield an easy following guide for the user to get around. 
+
+### **Login Page**
+
+![Login](/static/images/login.png)
+
+* Log in column section at the top page is styled with white box shadow feature to highlight the purpose of the log in page.
+* The log in page consists of the feature for the user to log in by entering correct username and hashed password. 
+* Once the user key in the correct input field which matched to the database, it will then redirect the user to the user's profile page, which shows all the recipes created by the user.
+* If the user key in the incorrect input for either the username and/or password, the flash message will pop up at the top of the page notifying incorrect username and/or password, and the user will continue to stay on the same page. 
+* The log in button is emplaced at the bottom of the user input field section. It is styled with liquid motion feature to make it looks more elegant and visually tempting. 
+* A **Register Link** is displayed below the button for the user to create an account.   
+
+### **Registration Page**
+
+![Register](/static/images/register.png)
+
+* Register column section at the top page is styled with white box shadow feature to highlight the purpose of the register page.
+* The register page consists of the feature for the user to create their username and password. 
+* The register button is styled with liquid motion feature same to the log in button. 
+* Once the user created their username and password, it will then redirect the user to the user's profile page, which shows all the recipes created by the user, flash message stating **Registration Completed**, number of recipe created, and a **Add New Recipe** button below. 
+
+### **Log Out**
+
+* Log Out link is located the the top right corner for logged in user.
+* Once the user has logged out from the session, it will redirect the user to the log in page and the flash message will pop up to notify the user has been logged out.
+
+### **Profile Page**
+
+![Profile](/static/images/profile.png)
+
+* The profile page shows all the recipes created by the user. 
+* User can see the total number of recipes created by themselves.
+* User can glance an overview of all those recipes in recipe card profile style. 
+* User can click onto the recipe card to view the recipe details. 
+
+### **Add Recipe Page**
+
+![Add Recipe](/static/images/addrecipe.png)
+
+* Logged in and registered user can add a recipe on the add new recipe page. 
+* All of the required input fields contain the placeholders to notify the user what kind of data to enter. 
+* The required input fields has an red asterisk icon so the user knows it is compulsory to have these input fields to be filled. 
+* Each of the input fields is associated with a relevant fontawesome icon. 
+* The **Meal Type** and **Dietery** fields have dropdown section where the user can choose an option from the dropdown. 
+* If the user doesn't have a recipe image to upload to their page, the recipe image placeholder will show on the recipe detail page.
+* The red **CREATE RECIPE** button is located at bottom of the form after the user has filled up the input fields. It will then redirect the user to the user's profile page.      
+
+### **Edit Recipe Feature**
+
+* The recipe edit feature is only accessible for the user who has created their own recipe. Other user would not have the edit feature if they are viewing other's creators recipe. 
+* The Edit Recipe page has the same input fields and form layout as to the Add Recipe page but the form is pre-populated with the original recipe's detail. This pre-populated feature enable the user to edit the recipe easily without have to re-enter the details. 
+* Once the user clicked on the **DONE** button, the database will get updated and redirect the user back to the edited recipe detail page with a flash message pop up saying the recipe is updated successfully.
+* The user can click on the **CANCEL** button if he/she decided not to edit the recipe, and will be redirected back to the same recipe detail page.  
+
+### **Delete Recipe Feature**
+
+* The recipe delete feature is only accessible for the user who has created their own recipe. Other user would not have the delete feature if they are viewing other's creators recipe. 
+* User can delete the recipe by clicking on the **DELETE** button and the recipe will be removed from the database and user's recipe profile page. The total number of user's recipe will deduct and update automatically. 
+
+### **Footer Section**
+
+* All pages contain a footer section which shows [Github](https://github.com/), [Facebook](https://www.facebook.com/), [Linkedin](https://www.facebook.com/) and [Youtube](https://www.youtube.com/). 
+* Each link clicked will open up a new tab so the existing page will remain which is easy for navigation. 
+
+### **Error 404 and 500 Page**
+
+![Error 404 and 500 Page](/static/images/404.png)
+
+* Error 404 page is shown if page not found or file not found error message. There is a **HOME** link the user can click to redirect back to the home page.
+* On the other hand, user can click on any navigation link on the top page.
+
+# **Features Left To Implement**
+
+* Total Views - Allow user to know the total views of a recipe profile.
+* Recipe Arrangement Order - Allow the recipes to appear at the top page based on the number of viewing. Highest view will placed at the top page, and following up subsequently.
+* Advance search function - Allow the user to search any keyword from the database if the input is in a proper order which the database can filter and look up for it.
+* User account setting - Allow the user to change their username and/or password. 
+
+# **Technologies Used**
+
+* [Am I Responsive](http://ami.responsivedesign.is/) - For checking page responsiveness and readme content.
+* [PIP](https://pip.pypa.io/en/stable/installation/) - For installing essential tools.
+* [GitPod](https://www.gitpod.io/) - Online IDE for project development. 
+* [Git](https://git-scm.com/) - For version control.
+* [GitHub](https://github.com/) - For storing project remotely.
+* [ResizeImage](https://resizeimage.net/) - For resizing images.
+
+### **Font-End**
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - For building the web structure.
+* [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS) - For specifying how documents are presented to users.
+
+### **Back-End**
+
+* [Python](https://www.python.org/) - Progamming used for this back-end project.
+* [MongoDB](https://www.mongodb.com/) - NoSQL database program for storing non-relational data.
+* [PyMongo](https://pypi.org/project/pymongo/) - Tools for interacting with MongoDB database from Python.
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/) - For developing web applications using python, implemented on Werkzeug and Jinja2. 
+* [Werkzeug](https://werkzeug.palletsprojects.com/en/0.16.x/) - For password hashing generation and verification.
+* [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) - Allow data to be shared and processed before being turned in to content and sent back to the client.
+* [Heroku](https://www.heroku.com/) - For hosting project.
+
+### **Libraries**
+
+* [Materialize](https://materializecss.com/) - An open source responsive front-end framework that offers slick material design.
+* [Font Awesome](https://fontawesome.com/) - Offer icons for the project.
+* [Google Fonts](https://fonts.google.com/) - To import **Playfair Display** font to use for this project
+* [JQuery](https://jquery.com/) - For HTML DOM tree traversal and manipulation.
