@@ -330,3 +330,66 @@ The logo of the website is located at the top left position, whereas the remaini
     * [PIP](https://pip.pypa.io/en/stable/installation/)
     * [Python](https://www.python.org/)
 
+**Directions**
+
+There are two ways to use this project. 
+* You can clone this repository into your local IDE.
+    * Log in to Github and navigate to the GitHub repository: https://github.com/kenweechin/recipe-app
+    * Click on the "Code" drop down button which sits right beside the green "Gitpod" button. You can then select one of the drop down options.
+
+    **Clone the files using url**
+    * Copy the url.
+    * Create a repository in GitHub and a workspace in your IDE.
+    * Open the terminal and type: `$ git clone https://github.com/kenweechin/recipe-app`
+    * All the files now should import into your workspace.
+
+    **Download zip files**
+    * Create a repository in GitHub and a workspace in your IDE.
+    * Unzip the folder.
+    * Upload the files into your workspace.
+
+### **Deployment Preparation**
+* Get connection string with MongoDB
+    * Click on project, then click on connect
+    * Select connect your application (check python & version 3.6)
+    * Copy link & change database name & password (Use the password for user access and not  login details)
+
+* Set local environment
+    * Create env.py file in the route directory by entering touch env.py in your command line interface
+    * Add the following to your env.py:
+
+        import os   
+        os.environ.setdefault("IP", "0.0.0.0")    
+        os.environ.setdefault("PORT", "5000")   
+        os.environ.setdefault("SECRET_KEY", "your_secret_key")   
+        os.environ.setdefault("MONGO_URI", "Your_Mongo_connection_string")   
+        os.environ.setdefault("MONGO_DBNAME", "Your_DB_Name")
+
+    * Add env.py and ‘pycache/’ directory to .gitignore
+
+* Requirements.txt and Procfile
+    * Create a requirements.txt file, which will list all of the Python dependencies by typing the following in the command line interface:
+
+        $ pip freeze > requirements.txt
+    * Create a Procfile, which is a specific type of file that tells Heroku how to run our project by typing the following the command line interface:
+
+        $ echo web: python app.py > Procfile
+    
+    *Note that you have to write Procfile with a capital P. 
+    * Add and commit the requirement.txt and procfile then push to GitHub
+
+### **Deployment on Heroku**
+* Log onto Heroku and click the create new app button
+* Enter a unique name for your application
+* Select the region closest to you
+* Set your deployment method to 'GitHub'
+* Search for the repository you wish to deploy from
+* Enable automatic deploy
+* Set environment in Heroku App
+    * Go to settings, then click on reveal config vars
+    * Enter your key value pairs as per your env.py file (without the inverted commas)
+    
+
+
+
+
