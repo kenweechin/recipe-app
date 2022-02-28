@@ -48,7 +48,7 @@
                 <h4 class="center-align N/A transparent text-shadow sidenav-text">MEALBOOK</h4>
             </li>
             <li><a href="{{ url_for('get_recipes')}}">Home</a></li>
-            <li><a href="">All Recipes</a></li>
+            <li><a href="{{ url_for('all_recipes')}}">All Recipes</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user'])}}">Your Recipe</a></li>
                 <li><a href="{{ url_for('add_recipe')}}">New Recipe</a></li>
