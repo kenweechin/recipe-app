@@ -1,4 +1,4 @@
-![Responsive Mockup](wireframes/mockup.png)
+![Responsive Mockup](/documentation/wireframes/mockup.png)
 
 # MEALBOOK
 MEALBOOK is a practical Python and Data Centric Development Milestone Project.
@@ -90,24 +90,24 @@ User page accessibility:
 
 Balsamiq software was used to generate the following wireframes while doing the project planning and scope plan section. Click on the following links to view.
 
-* [Home](wireframes/home.pdf)
-* [All Recipe](wireframes/all_recipes.pdf)
-* [Log In](wireframes/login.pdf)
-* [Register](wireframes/register.pdf)
-* [Add/EditRecipe](wireframes/add.edit_recipe.pdf)
-* [Recipe Details](wireframes/recipe_details.pdf)
+* [Home](/documentation/wireframes/home.pdf)
+* [All Recipe](/documentation/wireframes/all_recipes.pdf)
+* [Log In](/documentation/wireframes/login.pdf)
+* [Register](/documentation/wireframes/register.pdf)
+* [Add/EditRecipe](/documentation/wireframes/add.edit_recipe.pdf)
+* [Recipe Details](/documentation/wireframes/recipe_details.pdf)
 
 # **Features**
 
 ### **Home Navigation Bar**
 
-![Navbar](/static/images/homenavbar.png)
+![Navbar](/documentation/screenshots/homenavbar.png)
 
 The logo of the website is located at the top left position, whereas the remaining navigation links (Home, All Recipes, Log In, Register) for non-registered user, (Home, All Recipes, Log In, Register, Profile, Add Recipe) for registered user are situated at top right corner. Both MEALBOOK and Home navigation links are redirected to the home page. In a tablet and mobile resolution, the navbar is collapsed into a burger bar icon and a sidenav bar will pop out once clicked.  
 
 ### **Home Navigation Bar for non-registered user**
 
-![Non-Registered User](/static/images/nonusernav.png)
+![Non-Registered User](/documentation/screenshots/nonusernav.png)
 
 * Home
 * All Recipes
@@ -116,7 +116,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ### **Home Navigation Bar for registered user**
 
-![Registered User](/static/images/usernav.png)
+![Registered User](/documentation/screenshots/usernav.png)
 
 * Home
 * All Recipes
@@ -130,7 +130,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ### **All Recipes Page Features**
 
-![All Recipes](/static/images/allrecipes.png)
+![All Recipes](/documentation/screenshots/allrecipes.png)
 
 * The All Recipes page displays all the recipes card profile created by different users. 
 * Non-registered and registered user has the accessibility to browse all those recipes. 
@@ -143,7 +143,7 @@ The logo of the website is located at the top left position, whereas the remaini
     * Recipe serving size
 
 ### **Recipe Details Page**
-![Recipe Details](/static/images/recipedetails.png)
+![Recipe Details](/documentation/screenshots/recipedetails.png)
 
 * The Recipe Detail page displays the details of the recipe. 
 * Recipe name is shown at the top of the page.
@@ -152,7 +152,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ### **Login Page**
 
-![Login](/static/images/login.png)
+![Login](/documentation/screenshots/login.png)
 
 * Log in column section at the top page is styled with white box shadow feature to highlight the purpose of the log in page.
 * The log in page consists of the feature for the user to log in by entering correct username and hashed password. 
@@ -163,7 +163,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ### **Registration Page**
 
-![Register](/static/images/register.png)
+![Register](/documentation/screenshots/register.png)
 
 * Register column section at the top page is styled with white box shadow feature to highlight the purpose of the register page.
 * The register page consists of the feature for the user to create their username and password. 
@@ -177,7 +177,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ### **Profile Page**
 
-![Profile](/static/images/profile.png)
+![Profile](/documentation/screenshots/profile.png)
 
 * The profile page shows all the recipes created by the user. 
 * User can see the total number of recipes created by themselves.
@@ -186,7 +186,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ### **Add Recipe Page**
 
-![Add Recipe](/static/images/addrecipe.png)
+![Add Recipe](/documentation/screenshots/addrecipe.png)
 
 * Logged in and registered user can add a recipe on the add new recipe page. 
 * All of the required input fields contain the placeholders to notify the user what kind of data to enter. 
@@ -215,7 +215,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ### **Error 404 and 500 Page**
 
-![Error 404 and 500 Page](/static/images/404.png)
+![Error 404 and 500 Page](/documentation/screenshots/404.png)
 
 * Error 404 page is shown if page not found or file not found error message. There is a **HOME** link the user can click to redirect back to the home page.
 * On the other hand, user can click on any navigation link on the top page.
