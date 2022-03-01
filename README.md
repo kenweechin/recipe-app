@@ -207,6 +207,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 * The recipe delete feature is only accessible for the user who has created their own recipe. Other user would not have the delete feature if they are viewing other's creators recipe. 
 * User can delete the recipe by clicking on the **DELETE** button and the recipe will be removed from the database and user's recipe profile page. The total number of user's recipe will deduct and update automatically. 
+* The delete modal confirmation message will pop out to confirm if the user is intending to delete the recipe. This defensive design is to ensure the user would not accidentally delete their recipe by misclick. 
 
 ### **Footer Section**
 
@@ -369,6 +370,7 @@ The logo of the website is located at the top left position, whereas the remaini
 **CSS**
 
 * CSS was tested through [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). No error is shown.
+
 
 # **Deployment**
 
