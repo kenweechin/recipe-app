@@ -260,41 +260,72 @@ The logo of the website is located at the top left position, whereas the remaini
 
 # **Testing**
 
-### **Client Stories Testing Section** 
+### **User Stories Testing Section** 
 
-**All Recipes Page**
-    
-* Once the "All Recipes" link was clicked and entering the page, all the recipes are shown. A maximum of 8 recipes card profiles are shown with each row contain 4 recipes card profiles in tablet and laptop resolution. Each of the recipe card profiles shows the image, meal type, recipe name, diet type, and quantity of serving. There are no elements that are extending beyond the card profile which can yield an unprofessional sense toward the website. The pagination is shown at the bottom of the page. It will highlight the current page in a light pink color. Clicking on the second and subsequent pages do show the remaining recipe card profiles with all recipe details that are suppose to be shown. All pagination works smoothly without any broken page. The quantity of recipes created which shown in "All Recipes" page are matching to the MongoDB. 
-
-* The "Log In" and "Sign Up" links at the top page is directing the user to the corresponding pages.   
-
-* The search function is filtering the entered keyword and showing the correct result. For example, if "breakfast" is searched, all the recipes where the meal type is "Breakfast" will display to the page, and it does not matter if the keyword entered is in capital letter. Recipe name and diet type shows the corresponding results as well. An irrelevant keyword was entered to test the pop up message of stating "Ops! No results were found" is showing, which it does. User can click on the "All Recipe" navigation link at the top navigation bar to reset the searching.  
-
+**All Recipes Page features are working as in:**
+* Once the "All Recipes" link was clicked and entering the page, all the recipes are shown. 
+* A maximum of 8 recipes card profiles are shown with each row contain 4 recipes card profiles in tablet and laptop resolution. 
+* Each of the recipe card profiles shows the image, meal type, recipe name, diet type, and quantity of serving. 
+* There are no elements that are extending beyond the card profile which can yield an unprofessional sense toward the website. 
+* The pagination is shown at the bottom of the page. It will highlight the current page in a light pink color. 
+* Clicking on the second and subsequent pages do show the remaining recipe card profiles with all recipe details that are suppose to be shown.
+* All pagination works smoothly when navigation to different pages without any broken page. 
+* The quantity of recipes created which shown in "All Recipes" page are matching to the MongoDB.
+* The "Log In" and "Sign Up" links at the top page once clicked, are directing the user to the corresponding pages.   
+* The search function is filtering the entered keyword and showing the correct result. For example, if "breakfast" is searched, all the recipes where the meal type is "Breakfast" will display to the page, and it does not matter if the keyword entered is in capital letter. 
+* Recipe name and diet type shows the corresponding results as well. 
+* An irrelevant keyword was entered to test the pop up message of stating "Ops! No results were found" is showing, which it does. 
+* User can click on the "All Recipe" navigation link at the top navigation bar to reset the searching.  
 * For logged in user, the additional elements displayed are the total recipes quantity is shown at the top page. The button "CLICK ME TO ADD NEW RECIPE" is working which direct the user to "Add Recipe" page. 
 
-**Recipe Details Page**
+**Recipe Details Page features are working as in:**
 
-* The layout of the recipe image and recipe details are align properly. Ingredients and cooking method section contents are display in a list and a proper way. For logged in user, the "Edit" button direct the user to the "Edit Recipe" page, whereas the "Delete" button will delete the recipe. 
+* The layout of the recipe image and recipe details are align properly. 
+* Ingredients and cooking method section contents are display in a list and a proper way. 
+* For logged in user, the "Edit" button direct the user to the "Edit Recipe" page, whereas the "Delete" button will delete the recipe. 
 
-**Log In Page**
+**Log In Page features are working as in:**
 
-* Once the "Log In" button on the top navigation bar is clicked, the form is opened up. A valid username and password are entered and it logged the user in successfully and direct the user to their profile page. Further testing was done by entering an invalid either username or password, and log in action can't be performed. The "Register" link below works which direct the guest to the registration page.
+* Once the "Log In" button on the top navigation bar is clicked, the form is opened up. 
+* A valid username and password are entered and it logged the user in successfully and direct the user to their profile page. 
+* Further testing was done by entering an invalid either username or password, and log in action can't be performed. 
+* The "Register" link below works which direct the guest to the registration page.
 
-**Register Page**
+**Register Page features are working as in:**
 
-* The first thing to test is by entering the existing username and password which is already created and stored in the database. Once clicked on the sign up button, a flash message popped up stating "This username is already registered" as expected. Whereas, entering a new username and password will direct the new user to their profile page with a flash message showing registration succeed. If the guest entering the username with the character less than 4 and more than 20, the error will show. On the other hand, if the new password entered is less than 6 character and more than 20 character, the error will show. If neither username and password are entered, the error will show as well. The "Sign-In" link below the sign up button is working which direct the guest to the "Log In" page. 
+* The first thing to test is by entering the existing username and password which is already created and stored in the database.
+* Once clicked on the sign up button, a flash message popped up stating "This username is already registered" as expected. 
+* Entering a new username and password direct the new user to their profile page with a flash message showing registration succeed. 
+* If the guest entering the username with the character less than 4 and more than 20, the error will show. 
+* If the new password entered is less than 6 character and more than 20 character, the error will show. 
+* If neither username and password are entered, the error will show as well. 
+* The "Sign-In" link below the sign up button is working which direct the guest to the "Log In" page. 
 
-**Profile Page**
+**Profile Page features are working as in:**
 
-* This is shown only for the logged in user. The total recipes quantity is shown at the top page. It shows the number of recipes created by the particular user. Once clicked onto each of the recipe detail pages, all the essential recipes details are shown. Both "Edit" and "Delete" buttons are shown. "CLICK ME TO ADD NEW RECIPE" button is shown on the top recipe page and it can direct the user to "Add Recipe" page to fill up the required recipe forms.   
+* This is shown only for the logged in user. 
+* The total recipes quantity is shown at the top page which shows the number of recipes created by the particular user. 
+* Once clicked onto each of the recipe detail pages, all the essential recipes details are shown. 
+* Both "Edit" and "Delete" buttons are shown. 
+* "CLICK ME TO ADD NEW RECIPE" button is shown on the top recipe page and it can direct the user to "Add Recipe" page to fill up the required recipe forms.   
 
-**Profile Page**
+**Add Recipe Page features are working as in:**
 
-* All the required input fields with empty input will lead to an error and the form won't be able to submit. The image url input is not essential, hence leaving it blank does not generate error. Yet if the user enter an invalid image url, it will display an error to request the user to enter an valid image url. If there is no image url input, the image placeholder will display, which in this case all is working fine. 
+* All the required input fields with empty input will lead to an error and the form won't be able to submit. 
+* The image url input is not essential, hence leaving it blank does not generate error. 
+* Yet if the user enter an invalid image url, it will display an error to request the user to enter an valid image url. 
+* If there is no image url input, the image placeholder will display, which in this case all is working fine. 
 
-**Edit Page**
+**Edit Recipe Page features are working as in:**
 
-* Only the author will able to see the "Edit" and "Delete" button. If the link was edited and changed to the other user's username, nothing will show and it remains on the user's own profile page, indicates the defensive design works well. Furthermore, author can see the pre-populated fields on the form and able to apply changes easily. Once every required input fields are edited and submmitted, the recipe details are changed accordingly as well, proving the edit feature works perfectly.
+* Only the author will able to see the "Edit" and "Delete" button. 
+* If the link was edited and changed to the other user's username, nothing will show and it remains on the user's own profile page, indicates the defensive design works well. 
+* Author can see the pre-populated fields on the form and able to apply changes easily. 
+* Once every required input fields are edited and submmitted, the recipe details are changed accordingly as well, proving the edit feature works perfectly.
+
+**Delete Recipe feature is working as in:**
+
+* The selected recipe is removed from the collections in "All Recipes" collections and database. 
 
 **404 and 500 Errors**
 
@@ -311,7 +342,16 @@ The logo of the website is located at the top left position, whereas the remaini
 
 **Responsiveness**
 
-* All the pages are tested for its responsivess by using Google Chrome's Developer Tools, from mobile resolution to desktop resolution. All the page elements display in a proper manner. The burger bar icon is shown when the website is in mobile and tablet resolution. 
+* All the pages are tested for its responsivess by using Google Inspect, from mobile resolution to desktop resolution. All the page elements display in a proper manner. The burger bar icon is shown when the website is in mobile and tablet resolution. 
+* Quality assurance of the website across multiple browsers had been done by using [Browserstack](https://www.browserstack.com/). The following browsers had been tested for compatibility and all of them passed the test.
+    * Edge
+    * Firefox
+    * Chrome
+    * Opera
+    * Yandex
+    * Safari
+
+
 
 ### **Code Validation**
 
