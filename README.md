@@ -341,7 +341,7 @@ The logo of the website is located at the top-left position, whereas the remaini
 **Bugs and Fixes**
 
 * The landing image on the home page will go blank or missing occasionally. Hard reloading the page a few times will resolve the issue. 
-* The ingredients and methods of cooking input field: If the user copies the content from the other sources and paste it to the input field, the result page will show all the text are displaying on the same row. Hence, hitting the "enter" button after a sentence or paragraph will show the content in a proper alignment list. 
+* The ingredients and methods of cooking input field: If the user create and add the content into the ingredient and method input field, the result page will show all the text are displaying on the same row when viewing the recipe detail page. Yet, if the user edits the recipe and re-type into the ingredient and method input field, each of the list can display in a list order. This is the error found during the testing stage. Due to the tight time frame of the due date submission, I reckon this error vital to note in this section.
 
 **Responsiveness**
 
