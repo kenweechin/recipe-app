@@ -333,7 +333,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 **Navbar / Footer Section**
 
-* All links are tested to ensure they are pointing to the correct destination. 
+* All links are tested and they are pointing to the correct destination. 
 
 **Bugs and Fixes**
 
@@ -352,12 +352,23 @@ The logo of the website is located at the top left position, whereas the remaini
     * Safari
 
 
-
 ### **Code Validation**
 
 **Python**
 
-* Python file was tested via [PEP8 Online](http://pep8online.com/) validator and the tested python code is PEP8 compliant.
+* Python file was tested through [PEP8 Online](http://pep8online.com/) validator and the tested python code is PEP8 compliant.
+
+**Javascript**
+
+* JS code was tested through [JSHint](https://jshint.com/). The dollar sign "$" was considered as undefined variable by Jshint, yet, it is essential for jQuery Materialize initialization.
+
+**Html**
+
+* All Html pages were tested through [The W3C Markup Validation Service](https://validator.w3.org/). Errors are shown on the Jinja templating language because it doesn't recognize this language. 
+
+**CSS**
+
+* CSS was tested through [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). No error is shown.
 
 # **Deployment**
 
