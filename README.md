@@ -455,6 +455,9 @@ There are two ways to use this project.
 ### **Website Design Feature**
 * The button design feature in Log In and Register page was derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52.
 
+### **Acknowledgement**
+* I would like to thank to the members from the Student Support and Tutor from Code Institute who had offered advices and help on my coding related issue. Furthermore, I would like to thank to my mentor - Mr. Spencer for steering my project's to the right direction and Mr Rohit for giving an overall assessment on my project.  
+
 
 
 
