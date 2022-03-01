@@ -7,10 +7,11 @@
   <div class="col s12 m6">
     <!--Display the selected recipe image-->
     {% if selected_recipe.image_url %}
-    <img src="{{ selected_recipe.image_url }}" class="single-recipe-image">
+    <img src="{{ selected_recipe.image_url }}" class="single-recipe-image" alt="Recipe Image">
     <!--Display the placeholder image if no image url is inserted or invalid url input-->
     {% else %}
-    <img src="{{url_for('static', filename='images/image-placeholder.png')}}" class="image-placeholder">
+    <img src="{{url_for('static', filename='images/image-placeholder.png')}}" class="image-placeholder"
+      alt="Placeholder Image">
     {% endif %}
     <!--Author's Name-->
     <p class="recipe-author center-align">Created By: {{ selected_recipe.created_by }}</p>
@@ -74,7 +75,7 @@
   </div>
   <div class="col s6">
     <a href="{{ url_for('delete_recipe', recipe_id=selected_recipe._id) }}" class="btn-medium red btn"><i
-        class="fas fa-trash"></i></i>Delete</a>
+        class="fas fa-trash"></i>Delete</a>
   </div>
   {% endif %}
 </div>
@@ -98,7 +99,7 @@
       {{ selected_recipe.recipe_ingredients }}
     </li>
   </ul>
-<hr style="width:70%">
+  <hr style="width:70%">
 </div>
 
 <div class="row s12 m12 center-align">
@@ -110,4 +111,5 @@
     </li>
   </ul>
 </div>
+
 {% endblock %}

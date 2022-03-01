@@ -17,7 +17,6 @@
 {% else %}
 <p class="all-recipes-title center-align"><a href="{{ url_for('login')}}" class="login-underline">Log In</a>
   or <a href="{{ url_for('register')}}" class="registered-underline">Sign Up</a> to CREATE your own recipe!</p>
-</div>
 {% endif %}
 
 <div class="row  ">
@@ -32,6 +31,7 @@
         <button type="submit" class="light-blue darken-1 btn text-shadow">
           <i class="fas fa-search left"></i>Search Recipes
         </button>
+      </div>
     </div>
   </form>
 </div>
@@ -87,6 +87,7 @@
         href="{{ url_for('all_recipes', page=recipe_pagenum) }}">{{ recipe_pagenum }}</a></li>
     {% endif %}
     {% endfor %}
+  </ul>
 </div>
 
 {% endblock %}
