@@ -324,6 +324,15 @@ h5 {
     padding-right: 4rem;
 }
 
+.delete-recipe-button,
+.delete-recipe-text {
+    font-family: 'playfair display', sans-serif;
+}
+
+.delete-divider {
+    color: red;
+}
+
 /******************* all recipes page********************/
 .all-recipes-title {
     font-family: 'playfair display', sans-serif;
