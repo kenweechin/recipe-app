@@ -440,6 +440,26 @@ There are two ways to use this project.
     * Go to settings, then click on reveal config vars
     * Enter your key value pairs as per your env.py file (without the inverted commas)
     
+# **Credits**
+
+### **Media**
+* Background Image for Log In page, Register page, and landing image on Home page: [Unsplash](https://unsplash.com/).
+* Favicon: [The best Favicon Generator](https://favicon.io/).
+* Recipe Placeholder Image: [Google](https://www.google.com/).
+* Recipe Image: [BBC Food](https://www.bbc.co.uk/food). 
+
+### **Content**
+* The recipe's content (ingredients, methods etc.) were taken from bbc food website, except for other user who has created for their own.
+* The layout of recipe detail page was inspired by bbc food website.
+
+### **Website Design Feature**
+* The button design feature in Log In and Register page was derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52.
+
+
+
+
+
+
 
 
 
