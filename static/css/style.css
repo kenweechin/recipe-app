@@ -190,7 +190,7 @@ h5 {
     padding: 0.5rem;
     text-decoration: underline;
     text-decoration-color: red;
-    text-decoration-thickness: 0.3rem;
+    text-decoration-thickness: 0.7rem; 
 }
 
 .card .card-image img {
