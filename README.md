@@ -1,17 +1,17 @@
 ![Responsive Mockup](/documentation/wireframes/mockup.png)
 
 # MEALBOOK
-MEALBOOK is a practical Python and Data Centric Development Milestone Project.
+MEALBOOK is a practical Python and Data-Centric Development Milestone Project.
 
-This is a Full-Stack MongoDB-based Flask project. The main objective is to create a recipe database which allows users to perform the CRUD functionality (create, read, update, and delete). MEALBOOK offers features of all recipes accessibility to either registered or non registered user. They can browse recipes created by other creators and themselves. Registered users can create, edit, and delete their own recipes. MEALBOOK is aiming to create a food lover community where all the registered and non-registed inspire and get inspired by others.
+This is a Full-Stack MongoDB-based Flask project. The main objective is to create a recipe database that allows users to perform the CRUD functionality (create, read, update, and delete). MEALBOOK offers features of all recipes accessibility to either registered or non-registered users. They can browse recipes created by other creators and themselves. Registered users can create, edit, and delete their recipes. MEALBOOK is aiming to create a food lover community where all the registered and non-registered inspire and get inspired by others.
 
 The website consists of:
-* Home Page: Landing image with different varieties of foods as background, different meal types showing different meal varieties created on this website.
-* All Recipes Page: Display all recipes that have been created by different users. All the recipes are display as a card structure which showing image(if user uploads their food's image), , meal type, recipe's name, and number of serving. Each page consists of a maximum of eight card recipes, and user can click on the second page to browse more recipes. Search recipe bar is shown on top of the page. The number of recipe created is shown on top of the page highlighted with a red underline. 
-* Log In Page: User can log in to their own account.
-* Register Page: Non registered user can create an account.
-* Profile Page: Display all the recipes created by the user him/herself. The number of recipe created is shown on top of the page highlighted with a red underline. 
-* Recipe Detail Page: This page is directed when user/non user click on the recipe card. It displays recipe name, recipe image, meal type, diet type, serving size, prep time, cooking time, author, dish description, ingredients, and methods of cooking.
+* Home Page: Landing image with different varieties of foods as background, and an eye-catching button for attracting guests to click for browsing recipe collection.
+* All Recipes Page: Display all recipes that have been created by different users. All the recipes are displayed as a card structure that shows the image(if the user uploads their food's image), meal type, recipe's name, and serving size. Each page consists of a maximum of eight card recipes, and users can click on the second page to browse more recipes. The search recipe bar is shown on top of the page. The number of a recipe created is shown on top of the page highlighted with a red underline. 
+* Log In Page: Users can log in to their account.
+* Register Page: Non registered users can create an account.
+* Profile Page: Display all the recipes created by the user him/herself. The number of a recipe created is shown on top of the page highlighted with a red underline. 
+* Recipe Detail Page: This page is directed when the user/guest click on the recipe card. It displays recipe name, recipe image, meal-type, diet type, serving size, prep time, cooking time, author, dish description, ingredients, and methods of cooking.
 * New Recipe Page: All the essentials input for the user to add in the content related to the recipes attributes. Edit and Delete buttons are shown for further changes.
 
 Non-user page accessibility:
@@ -36,15 +36,15 @@ User page accessibility:
 ### **Player goals**
 
 * Create a simplistic and visual tempting yet flawless recipe app.
-* The purpose of the app is obvious when the user click landed on the main page. 
+* The purpose of the app is obvious when the user lands on the main page. 
 * Eye-catching landing image and description that suit the theme of the website.
-* All recipes created are shown in a page and can be navigated by just one click. The page will show an overview of recipes created.
+* All recipes created are shown on a page and can be navigated with just one click. The page will show an overview of recipes created.
 * The details of the recipe can be viewed by clicking on the recipe card profile. 
-* Each specific recipe profile consists of all neccessary data created by the author.
-* Registered user can edit or delete their own recipe but not others. 
-* Non registered user do not have edit and delete button when browsing the recipe profile. 
-* Registered user can add recipes through add recipe link by just one click on the top navigation bar. 
-* All navigation links and input in add recipe page have relevant icons right beside it so all users can know what does the link/input do in a glance. 
+* Each specific recipe profile consists of all necessary data created by the author.
+* Registered users can edit or delete their recipes but not others. 
+* Non registered users do not have an edit and delete button when browsing the recipe profile. 
+* Registered users can add recipes through add recipe link with just one click on the top navigation bar. 
+* All navigation links and input in add recipe page have relevant icons right beside it so all users can know what does the link/input do at a glance. 
 * All required inputs are marked with an asterisk symbol in red color. 
 * Easy navigation between different pages without any broken link or page error.
 * Well-structured content created from programming that provides a user-friendly MEABOOK app.
@@ -53,25 +53,25 @@ User page accessibility:
 ### **User Stories**
 
 * View all the recipes without having to register an account.
-* View all the recipe details as in recipe image, recipe meal type, recipe name, recipe diet type, recipe serving size, recipe preparation time, recipe cooking time, dish description, ingredients needed, and cooking methods. All of these are shown in an organized layout. All the details have a relevant icon so user can easily know what it is.
-* Able to search the keyword by typing keyword into the search bar. 
-* A respond message will show if there is no result returned. 
+* View all the recipe details as in recipe image, recipe meal type, recipe name, recipe diet type, recipe serving size, recipe preparation time, recipe cooking time, dish description, ingredients needed, and cooking methods. All of these are shown in an organized layout. All the details have a relevant icon so the user can easily know what it is.
+* Able to search the keyword by typing a keyword into the search bar. 
+* A response message will show if there is no result returned. 
 * Register a new account.
 * Add a new recipe.
 * Edit or delete an existing recipe. 
 * View the total recipes created.
-* Log out with one click and terminate session.
+* Log out with one click and terminate the session.
 * Use the website from any device such as desktop, laptop, tablet and mobile.    
 
 ### **Design Choices**
 
 * Framework
-    * [Materialize](https://materializecss.com/), a front-end framework was utilized for this project. Navbars, recipe cards, forms, and grid was created. 
+    * [Materialize](https://materializecss.com/), a front-end framework was utilized for this project. Navbars, recipe cards, forms, and a grid was created. 
     * [JQuery](https://jquery.com/) was used to initialize some Materialize elements. 
 * Imagery
-    * The background image on the home page is using the image with combination of different dishes. This is to demonstrate the main purpose of the website, which act as a representative element of the website is focusing on. This is to attract the user's attention and yield a trust emotion toward the website. The background images on the log in page and register page are food relevant as well to match the website's theme. 
+    * The background image on the home page is using the image with a combination of different dishes. This is to demonstrate the main purpose of the website, which act as a representative element of the website is focusing on. This is to attract the user's attention and yield a trust emotion toward the website. The background images on the log in page and register page are food relevant as well to match the website's theme. 
 * Color Scheme
-    * The main color of the website (except the images) used are generally in white tone. This is because all the images used and will be uploaded by the user to the website are generally rich in colors due to the food content. Hence, the colours of the images themselves are sufficient to yield colours that are able to enrich the website. Furthermore, white color tone does match to the design purpose which is clean and simplicity.
+    * The main color of the website (except the images) used are generally in white tone. This is because all the images used and will be uploaded by the user to the website are generally rich in colors due to the food content. Hence, the colours of the images themselves are sufficient to yield colours that can enrich the website. Furthermore, the white color tone does match the simplicity and clean design purpose.
     * The colors of the website title and other navigation links are set to maroon color to yield contrast with the white background of the website. 
     * Dark grey color is used for the top page of navigation links when the user hovers over the links to present a great contrast to the white tone background and shows to the user that they are currently hovering at that link. 
     * Links are shown in blue color. 
@@ -84,7 +84,7 @@ User page accessibility:
     * Each of the links/pages has the same navigation menu so the user can direct to the other navigation sites when they are browsing particular links.
     * Recipe cards profile has a rounded border style to look more modern. 
 * Icons 
-    * [FontAwesome](https://fontawesome.com/) and [MaterializeIcon](https://materializecss.com/icons.html) are the main icons library used for this project. Icons are a great in grabbing user's attention. It is user-friendly and absolutely useful for non-native english speakers and the icons stand out their purpose.  
+    * [FontAwesome](https://fontawesome.com/) and [MaterializeIcon](https://materializecss.com/icons.html) are the main icons library used for this project. Icons are great in grabbing users' attention. It is user-friendly and absolutely useful for non-native English speakers and the icons stand out their purpose.  
 
 ### **Wireframes**
 
@@ -103,7 +103,7 @@ Balsamiq software was used to generate the following wireframes while doing the 
 
 ![Navbar](/documentation/screenshots/homenavbar.png)
 
-The logo of the website is located at the top left position, whereas the remaining navigation links (Home, All Recipes, Log In, Register) for non-registered user, (Home, All Recipes, Log In, Register, Profile, Add Recipe) for registered user are situated at top right corner. Both MEALBOOK and Home navigation links are redirected to the home page. In a tablet and mobile resolution, the navbar is collapsed into a burger bar icon and a sidenav bar will pop out once clicked.  
+The logo of the website is located at the top-left position, whereas the remaining navigation links (Home, All Recipes, Login, Register) for the non-registered user, (Home, All Recipes, Login, Register, Profile, Add Recipe) for the registered user are situated at top right corner. Both MEALBOOK and Home navigation links are redirected to the home page. In a tablet and mobile resolution, the navbar is collapsed into a burger bar icon and a side nav bar will pop out once clicked.  
 
 ### **Home Navigation Bar for non-registered user**
 
@@ -132,11 +132,11 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ![All Recipes](/documentation/screenshots/allrecipes.png)
 
-* The All Recipes page displays all the recipes card profile created by different users. 
+* The All Recipes page displays all the recipes card profiles created by different users. 
 * Non-registered and registered user has the accessibility to browse all those recipes. 
-* At the top section of the page, there are **Log In** and **Sign Up** links for non-registered user/logged out user. The reason of placing these links at top is to encourage the user to log in to create more recipes, and for non-registered user to sign up an account. 
-* Follow up the links are the browse recipe bar section, where all the users can type in the keyword which in turn will return the desire results. Orelse, the message will show no results were found.
-* Each of the recipe card is showing the following features:
+* At the top section of the page, there is **Log In** and **Sign Up** links for non-registered user/logged out user. The reason for placing these links at the top is to encourage the user to log in to create more recipes, and for the non-registered user to sign up for an account. 
+* Follow up the links are the browse recipe bar section, where all the users can type in the keyword which in turn will return the desired results. Or else, the message will show no results were found.
+* Each of the recipe cards is showing the following features:
     * Recipe image
     * Recipe meal type ( Breakfast, Lunch, Dinner, or Dessert)
     * Recipe diet type ( Normal, Vegan, Low Carb, Diary/Lactose Free)
@@ -147,33 +147,33 @@ The logo of the website is located at the top left position, whereas the remaini
 
 * The Recipe Detail page displays the details of the recipe. 
 * Recipe name is shown at the top of the page.
-* Recipe image and (meal type, diet type, serving size, preparation time, cooking time) are sitting side by side. The reason for this arrangement is that, this will show the overview of a recipe. Furthermore, once the user is landed on this page, either any type of resolution, these section will display to the user first. 
-* Then, as the user scrolls down the page, it shows the dish description, ingredients, and cooking methods section. These elements are placing at below the page because those description elements tend to contain larger space for the content. Hence this page arrangement yield an easy following guide for the user to get around. 
+* Recipe image and (meal type, diet type, serving size, preparation time, cooking time) are sitting side by side. The reason for this arrangement is that this will show the overview of a recipe. Furthermore, once the user is landed on this page, either any type of resolution, this section will display to the user first. 
+* Then, as the user scrolls down the page, it shows the dish description, ingredients, and cooking methods section. These elements are placing at below the page because those description elements tend to contain larger space for the content. Hence this page arrangement yields an easy following guide for the user to get around. 
 
 ### **Login Page**
 
 ![Login](/documentation/screenshots/login.png)
 
-* Log in column section at the top page is styled with white box shadow feature to highlight the purpose of the log in page.
-* The log in page consists of the feature for the user to log in by entering correct username and hashed password. 
+* Log in column section at the top page is styled with a white box shadow feature to highlight the purpose of the login page.
+* The login page consists of the feature for the user to log in by entering the correct username and hashed password. 
 * Once the user key in the correct input field which matched to the database, it will then redirect the user to the user's profile page, which shows all the recipes created by the user.
 * If the user key in the incorrect input for either the username and/or password, the flash message will pop up at the top of the page notifying incorrect username and/or password, and the user will continue to stay on the same page. 
-* The log in button is emplaced at the bottom of the user input field section. It is styled with liquid motion feature to make it looks more elegant and visually tempting. 
+* The log in button is emplaced at the bottom of the user input field section. It is styled with a liquid motion feature to make it looks more elegant and visually tempting. 
 * A **Register Link** is displayed below the button for the user to create an account.   
 
 ### **Registration Page**
 
 ![Register](/documentation/screenshots/register.png)
 
-* Register column section at the top page is styled with white box shadow feature to highlight the purpose of the register page.
+* Register column section at the top page is styled with a white box shadow feature to highlight the purpose of the register page.
 * The register page consists of the feature for the user to create their username and password. 
-* The register button is styled with liquid motion feature same to the log in button. 
-* Once the user created their username and password, it will then redirect the user to the user's profile page, which shows all the recipes created by the user, flash message stating **Registration Completed**, number of recipe created, and a **Add New Recipe** button below. 
+* The register button is styled with a liquid motion feature same as the login button. 
+* Once the user-created their username and password, it will then redirect the user to the user's profile page, which shows all the recipes created by the user, flash message stating **Registration Completed**, number of a recipe created, and a **Add New Recipe** button below. 
 
 ### **Log Out**
 
-* Log Out link is located the the top right corner for logged in user.
-* Once the user has logged out from the session, it will redirect the user to the log in page and the flash message will pop up to notify the user has been logged out.
+* Log Out link is located in the top right corner for logged in users.
+* Once the user has logged out from the session, it will redirect the user to the login page and the flash message will pop up to notify the user has been logged out.
 
 ### **Profile Page**
 
@@ -181,32 +181,32 @@ The logo of the website is located at the top left position, whereas the remaini
 
 * The profile page shows all the recipes created by the user. 
 * User can see the total number of recipes created by themselves.
-* User can glance an overview of all those recipes in recipe card profile style. 
+* User can glance at an overview of all those recipes in recipe card profile style. 
 * User can click onto the recipe card to view the recipe details. 
 
 ### **Add Recipe Page**
 
 ![Add Recipe](/documentation/screenshots/addrecipe.png)
 
-* Logged in and registered user can add a recipe on the add new recipe page. 
+* Log in and registered users can add a recipe on the add new recipe page. 
 * All of the required input fields contain the placeholders to notify the user what kind of data to enter. 
-* The required input fields has an red asterisk icon so the user knows it is compulsory to have these input fields to be filled. 
-* Each of the input fields is associated with a relevant fontawesome icon. 
-* The **Meal Type** and **Dietery** fields have dropdown section where the user can choose an option from the dropdown. 
+* The required input fields have a red asterisk icon so the user knows it is compulsory to have these input fields to be filled. 
+* Each of the input fields is associated with a relevant font awesome icon. 
+* The **Meal Type** and **Dietary** fields have a dropdown section where the user can choose an option from the dropdown. 
 * If the user doesn't have a recipe image to upload to their page, the recipe image placeholder will show on the recipe detail page.
 * The red **CREATE RECIPE** button is located at bottom of the form after the user has filled up the input fields. It will then redirect the user to the user's profile page.      
 
 ### **Edit Recipe Feature**
 
-* The recipe edit feature is only accessible for the user who has created their own recipe. Other user would not have the edit feature if they are viewing other's creators recipe. 
-* The Edit Recipe page has the same input fields and form layout as to the Add Recipe page but the form is pre-populated with the original recipe's detail. This pre-populated feature enable the user to edit the recipe easily without have to re-enter the details. 
+* The recipe edit feature is only accessible for the user who has created their recipe. Other users would not have the edit feature if they are viewing another's creator's recipe. 
+* The Edit Recipe page has the same input fields and forms layout as the Add Recipe page but the form is pre-populated with the original recipe's detail. This pre-populated feature enables the user to edit the recipe easily without having to re-enter the details. 
 * Once the user clicked on the **DONE** button, the database will get updated and redirect the user back to the edited recipe detail page with a flash message pop up saying the recipe is updated successfully.
 * The user can click on the **CANCEL** button if he/she decided not to edit the recipe, and will be redirected back to the same recipe detail page.  
 
 ### **Delete Recipe Feature**
 
-* The recipe delete feature is only accessible for the user who has created their own recipe. Other user would not have the delete feature if they are viewing other's creators recipe. 
-* User can delete the recipe by clicking on the **DELETE** button and the recipe will be removed from the database and user's recipe profile page. The total number of user's recipe will deduct and update automatically. 
+* The recipe delete feature is only accessible for the user who has created their recipe. Another user would not have the delete feature if they are viewing another's creator's recipe. 
+* User can delete the recipe by clicking on the **DELETE** button and the recipe will be removed from the database and user's recipe profile page. The total number of user's recipes will deduct and update automatically. 
 
 ![Delete Modal Confirmation Message](/documentation/screenshots/delete.png)
 * The delete modal confirmation message will pop out to confirm if the user is intending to delete the recipe. This defensive design is to ensure the user would not accidentally delete their recipe by misclick. 
@@ -221,13 +221,13 @@ The logo of the website is located at the top left position, whereas the remaini
 ![Error 404 and 500 Page](/documentation/screenshots/404.png)
 
 * Error 404 page is shown if page not found or file not found error message. There is a **HOME** link the user can click to redirect back to the home page.
-* On the other hand, user can click on any navigation link on the top page.
+* On the other hand, the user can click on any navigation link on the top page.
 
 # **Features Left To Implement**
 
-* Total Views - Allow user to know the total views of a recipe profile.
-* Recipe Arrangement Order - Allow the recipes to appear at the top page based on the number of viewing. Highest view will placed at the top page, and following up subsequently.
-* Advance search function - Allow the user to search any keyword from the database if the input is in a proper order which the database can filter and look up for it.
+* Total Views - Allow users to know the total views of a recipe profile.
+* Recipe Arrangement Order - Allow the recipes to appear at the top page based on the number of viewing. The highest view will be placed at the top page and followed up subsequently.
+* Advanced search function - Allow the user to search any keyword from the database if the input is in a proper order which the database can filter and lookup for it.
 * User account setting - Allow the user to change their username and/or password. 
 
 # **Technologies Used**
@@ -246,12 +246,12 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ### **Back-End**
 
-* [Python](https://www.python.org/) - Progamming used for this back-end project.
+* [Python](https://www.python.org/) - Programming used for this back-end project.
 * [MongoDB](https://www.mongodb.com/) - NoSQL database program for storing non-relational data.
 * [PyMongo](https://pypi.org/project/pymongo/) - Tools for interacting with MongoDB database from Python.
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/) - For developing web applications using python, implemented on Werkzeug and Jinja2. 
 * [Werkzeug](https://werkzeug.palletsprojects.com/en/0.16.x/) - For password hashing generation and verification.
-* [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) - Allow data to be shared and processed before being turned in to content and sent back to the client.
+* [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) - Allow data to be shared and processed before being turned into content and sent back to the client.
 * [Heroku](https://www.heroku.com/) - For hosting project.
 
 ### **Libraries**
@@ -265,66 +265,66 @@ The logo of the website is located at the top left position, whereas the remaini
 
 ### **User Stories Testing Section** 
 
-**All Recipes Page features are working as in:**
+**All Recipes Page features are working as in**
 * Once the "All Recipes" link was clicked and entering the page, all the recipes are shown. 
-* A maximum of 8 recipes card profiles are shown with each row contain 4 recipes card profiles in tablet and laptop resolution. 
-* Each of the recipe card profiles shows the image, meal type, recipe name, diet type, and quantity of serving. 
+* A maximum of 8 recipes card profiles are shown with each row containing 4 recipes card profiles in tablet and laptop resolution. 
+* Each of the recipe card profiles shows the image, meal-type, recipe name, diet type, and quantity of serving. 
 * There are no elements that are extending beyond the card profile which can yield an unprofessional sense toward the website. 
-* The pagination is shown at the bottom of the page. It will highlight the current page in a light pink color. 
-* Clicking on the second and subsequent pages do show the remaining recipe card profiles with all recipe details that are suppose to be shown.
-* All pagination works smoothly when navigation to different pages without any broken page. 
-* The quantity of recipes created which shown in "All Recipes" page are matching to the MongoDB.
+* The pagination is shown at the bottom of the page. It will highlight the current page in a light pink colour. 
+* Clicking on the second and subsequent pages do show the remaining recipe card profiles with all recipe details that are supposed to be shown.
+* All pagination works smoothly when navigating to different pages without any broken pages. 
+* The number of recipes created which is shown on the "All Recipes" page are matches the MongoDB.
 * The "Log In" and "Sign Up" links at the top page once clicked, are directing the user to the corresponding pages.   
-* The search function is filtering the entered keyword and showing the correct result. For example, if "breakfast" is searched, all the recipes where the meal type is "Breakfast" will display to the page, and it does not matter if the keyword entered is in capital letter. 
-* Recipe name and diet type shows the corresponding results as well. 
-* An irrelevant keyword was entered to test the pop up message of stating "Ops! No results were found" is showing, which it does. 
+* The search function is filtering the entered keyword and shows the correct result. For example, if "breakfast" is searched, all the recipes where the meal type is "Breakfast" will display on the page, and it does not matter if the keyword entered is in capital letter. 
+* Recipe name and diet type show the corresponding results as well. 
+* An irrelevant keyword was entered to test the pop-up message stating "Ops! No results were found" is showing, which it does. 
 * User can click on the "All Recipe" navigation link at the top navigation bar to reset the searching.  
-* For logged in user, the additional elements displayed are the total recipes quantity is shown at the top page. The button "CLICK ME TO ADD NEW RECIPE" is working which direct the user to "Add Recipe" page. 
+* For logged in users, the additional elements displayed are the total recipe's quantity is shown on the top page. The button "CLICK ME TO ADD NEW RECIPE" is working which direct the user to the "Add Recipe" page. 
 
 **Recipe Details Page features are working as in:**
 
-* The layout of the recipe image and recipe details are align properly. 
-* Ingredients and cooking method section contents are display in a list and a proper way. 
-* For logged in user, the "Edit" button direct the user to the "Edit Recipe" page, whereas the "Delete" button will delete the recipe. 
+* The layout of the recipe image and recipe details are aligned properly. 
+* Ingredients and cooking method section contents are displayed in a list and a proper way. 
+* For logged in user, the "Edit" button directs the user to the "Edit Recipe" page, whereas the "Delete" button will delete the recipe. 
 
 **Log In Page features are working as in:**
 
 * Once the "Log In" button on the top navigation bar is clicked, the form is opened up. 
 * A valid username and password are entered and it logged the user in successfully and direct the user to their profile page. 
-* Further testing was done by entering an invalid either username or password, and log in action can't be performed. 
+* Further testing was done by entering an invalid either username or password, and login action can't be performed. 
 * The "Register" link below works which direct the guest to the registration page.
 
 **Register Page features are working as in:**
 
 * The first thing to test is by entering the existing username and password which is already created and stored in the database.
-* Once clicked on the sign up button, a flash message popped up stating "This username is already registered" as expected. 
-* Entering a new username and password direct the new user to their profile page with a flash message showing registration succeed. 
-* If the guest entering the username with the character less than 4 and more than 20, the error will show. 
-* If the new password entered is less than 6 character and more than 20 character, the error will show. 
-* If neither username and password are entered, the error will show as well. 
-* The "Sign-In" link below the sign up button is working which direct the guest to the "Log In" page. 
+* Once clicked on the signup button, a flash message popped up stating "This username is already registered" as expected. 
+* Entering a new username and password direct the new user to their profile page with a flash message showing registration success. 
+* If the guest enters the username with the character less than 4 and more than 20, the error will show. 
+* If the new password entered is less than 6 characters and more than 20 characters, the error will show. 
+* If neither username nor password is entered, the error will show as well. 
+* The "Sign-In" link below the signup button is working which direct the guest to the "Log In" page. 
 
 **Profile Page features are working as in:**
 
-* This is shown only for the logged in user. 
+* This is shown only for the logged-in user. 
 * The total recipes quantity is shown at the top page which shows the number of recipes created by the particular user. 
 * Once clicked onto each of the recipe detail pages, all the essential recipes details are shown. 
 * Both "Edit" and "Delete" buttons are shown. 
-* "CLICK ME TO ADD NEW RECIPE" button is shown on the top recipe page and it can direct the user to "Add Recipe" page to fill up the required recipe forms.   
+* "CLICK ME TO ADD NEW RECIPE" button is shown on the top recipe page and it can direct the user to the "Add Recipe" page to fill up the required recipe forms.   
 
 **Add Recipe Page features are working as in:**
 
 * All the required input fields with empty input will lead to an error and the form won't be able to submit. 
-* The image url input is not essential, hence leaving it blank does not generate error. 
-* Yet if the user enter an invalid image url, it will display an error to request the user to enter an valid image url. 
-* If there is no image url input, the image placeholder will display, which in this case all is working fine. 
+* The image URL input is not essential, hence leaving it blank does not generate an error. 
+* Yet if the user enters an invalid image URL, it will display an error to request the user to enter a valid image URL. 
+* If there is no image URL input, the image placeholder will display, which in this case all is working fine. 
 
 **Edit Recipe Page features are working as in:**
 
-* Only the author will able to see the "Edit" and "Delete" button. 
-* If the link was edited and changed to the other user's username, nothing will show and it remains on the user's own profile page, indicates the defensive design works well. 
+* Only the author will be able to see the "Edit" and "Delete" buttons. 
+* If the link was edited and changed to the other user's username, nothing will show and it remains on the user's profile page, indicating the defensive design works well. 
 * Author can see the pre-populated fields on the form and able to apply changes easily. 
-* Once every required input fields are edited and submmitted, the recipe details are changed accordingly as well, proving the edit feature works perfectly.
+* Once every required input field are edited and submitted, the recipe details are changed accordingly as well, proving the edit feature works perfectly.
 
 **Delete Recipe feature is working as in:**
 
@@ -332,7 +332,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 **404 and 500 Errors**
 
-* The url in the browser was changed to a dummy url to get a non-existing page, and the custom page 404 error page shows up. It proves the error-handler function works perfectly. The "Home" link on the page which direct the user back to the home page works as well. 
+* The URL in the browser was changed to a dummy URL to get a non-existing page, and the custom page 404 error page shows up. It proves the error-handler function works perfectly. The "Home" link on the page which direct the user back to the home page works as well. 
 
 **Navbar / Footer Section**
 
@@ -340,12 +340,12 @@ The logo of the website is located at the top left position, whereas the remaini
 
 **Bugs and Fixes**
 
-* The landing image on the home page will go blank or missing occasionally. Hard reload the page few times will resolve the issue. 
-* The ingredients and methods of cooking input field: If the user is copy the content from the other sources and paste to the input field, the result page will show all the text are displaying on the same row. Hence, hitting "enter" button after a sentence or paragraph will show the content in a proper alignment list. 
+* The landing image on the home page will go blank or missing occasionally. Hard reloading the page a few times will resolve the issue. 
+* The ingredients and methods of cooking input field: If the user copies the content from the other sources and paste it to the input field, the result page will show all the text are displaying on the same row. Hence, hitting the "enter" button after a sentence or paragraph will show the content in a proper alignment list. 
 
 **Responsiveness**
 
-* All the pages are tested for its responsivess by using Google Inspect, from mobile resolution to desktop resolution. All the page elements display in a proper manner. The burger bar icon is shown when the website is in mobile and tablet resolution. 
+* All the pages are tested for their responsiveness by using Google Inspect, from mobile resolution to desktop resolution. All the page elements display properly. The burger bar icon is shown when the website is in mobile and tablet resolution. 
 * Quality assurance of the website across multiple browsers had been done by using [Browserstack](https://www.browserstack.com/). The following browsers had been tested for compatibility and all of them passed the test.
     * Edge
     * Firefox
@@ -363,7 +363,7 @@ The logo of the website is located at the top left position, whereas the remaini
 
 **Javascript**
 
-* JS code was tested through [JSHint](https://jshint.com/). The dollar sign "$" was considered as undefined variable by Jshint, yet, it is essential for jQuery Materialize initialization.
+* JS code was tested through [JSHint](https://jshint.com/). The dollar sign "$" was considered as an undefined variable by Jshint, yet, it is essential for jQuery to perform Materialize initialization.
 
 **Html**
 
@@ -390,10 +390,10 @@ The logo of the website is located at the top left position, whereas the remaini
 There are two ways to use this project. 
 * You can clone this repository into your local IDE.
     * Log in to Github and navigate to the GitHub repository: https://github.com/kenweechin/recipe-app
-    * Click on the "Code" drop down button which sits right beside the green "Gitpod" button. You can then select one of the drop down options.
+    * Click on the "Code" drop-down button which sits right beside the green "Gitpod" button. You can then select one of the drop-down options.
 
-    **Clone the files using url**
-    * Copy the url.
+    **Clone the files using URL**
+    * Copy the URL.
     * Create a repository in GitHub and a workspace in your IDE.
     * Open the terminal and type: `$ git clone https://github.com/kenweechin/recipe-app`
     * All the files now should import into your workspace.
@@ -410,7 +410,7 @@ There are two ways to use this project.
     * Copy link & change database name & password (Use the password for user access and not  login details)
 
 * Set local environment
-    * Create env.py file in the route directory by entering touch env.py in your command line interface
+    * Create env.py file in the route directory by entering touch env.py in your command-line interface
     * Add the following to your env.py:
 
         import os   
@@ -423,10 +423,10 @@ There are two ways to use this project.
     * Add env.py and ‘pycache/’ directory to .gitignore
 
 * Requirements.txt and Procfile
-    * Create a requirements.txt file, which will list all of the Python dependencies by typing the following in the command line interface:
+    * Create a requirements.txt file, which will list all of the Python dependencies by typing the following in the command-line interface:
 
         $ pip freeze > requirements.txt
-    * Create a Procfile, which is a specific type of file that tells Heroku how to run our project by typing the following the command line interface:
+    * Create a Procfile, which is a specific type of file that tells Heroku how to run our project by typing the following command-line interface:
 
         $ echo web: python app.py > Procfile
     
@@ -441,8 +441,8 @@ There are two ways to use this project.
 * Search for the repository you wish to deploy from
 * Enable automatic deploy
 * Set environment in Heroku App
-    * Go to settings, then click on reveal config vars
-    * Enter your key value pairs as per your env.py file (without the inverted commas)
+    * Go to Settings, then click on reveal config vars
+    * Enter your key-value pairs as per your env.py file (without the inverted commas)
     
 # **Credits**
 
@@ -453,14 +453,14 @@ There are two ways to use this project.
 * Recipe Image: [BBC Food](https://www.bbc.co.uk/food). 
 
 ### **Content**
-* The recipe's content (ingredients, methods etc.) were taken from bbc food website, except for other user who has created for their own.
-* The layout of recipe detail page was inspired by bbc food website.
+* The recipe's content (ingredients, methods etc.) were taken from the BBC food website, except for another user who has created for their own.
+* The layout of the recipe detail page was inspired by the BBC food website.
 
 ### **Website Design Feature**
-* The button design feature in Log In and Register page was derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52.
+* The button design feature in the Home page, login page and Register page was derived and edited from https://cssbuttons.io/detail/westitan/mean-falcon-52.
 
 ### **Acknowledgement**
-* I would like to thank to the members from the Student Support and Tutor from Code Institute who had offered advices and help on my coding related issue. Furthermore, I would like to thank to my mentor - Mr. Spencer for steering my project's to the right direction and Mr Rohit for giving an overall assessment on my project.  
+* I would like to thank the members of the Student Support and Tutor from Code Institute who had offered advice and help on my coding related issue. Furthermore, I would like to thank my mentor - Mr Spencer for steering my projects in the right direction and Mr Rohit for giving an overall assessment of my project.  
 
 
 
